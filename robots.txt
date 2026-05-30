@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://aashiyanadecor.in/sitemap.xml
+
+# Block dev/build files
+Disallow: /compress_images.py
+Disallow: /extract_tiles.py
+Disallow: /fix_encoding.py

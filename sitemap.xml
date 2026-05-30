@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://aashiyanadecor.in/</loc>
+    <lastmod>2025-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
+      <image:title>Black Galaxy Granite Feature Wall - Aashiyana Decor Jaipur</image:title>
+      <image:caption>Premium Black Galaxy Granite TV feature wall by Aashiyana Decor, Jaipur</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://aashiyanadecor.in/images/tiles/syncstone_tile_02.webp</image:loc>
+      <image:title>Imported Marble Tiles - Aashiyana Decor Jaipur</image:title>
+      <image:caption>Premium imported marble tiles available at Aashiyana Decor, Gopalpura Bypass Jaipur</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://aashiyanadecor.in/images/granite/RosyPink.webp</image:loc>
+      <image:title>Rosy Pink Granite Kitchen Countertop Jaipur</image:title>
+      <image:caption>Rosy Pink granite kitchen countertop and flooring - Aashiyana Decor</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://aashiyanadecor.in/images/MorningMist.webp</image:loc>
+      <image:title>Specta Quartz Kitchen Island Jaipur</image:title>
+      <image:caption>Specta Quartz Morning Mist kitchen island - Aashiyana Decor, Jaipur</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://aashiyanadecor.in/images/tiles/leather120_tile_08.webp</image:loc>
+      <image:title>Leather Finish Tiles Bathroom Jaipur</image:title>
+      <image:caption>Premium leather-finish 600x1200mm tiles for bathrooms - Aashiyana Decor Jaipur</image:caption>
+    </image:image>
+  </url>
+
+</urlset>
