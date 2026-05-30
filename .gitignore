@@ -1,0 +1,12 @@
+# Dev scripts (not needed in deployment)
+compress_images.py
+extract_tiles.py
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.swp

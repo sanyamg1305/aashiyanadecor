@@ -1,0 +1,1945 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aashiyana Decor â€“ For Stylish Living</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    /* â”€â”€â”€ RESET & BASE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --purple:    #4A3D9A;
+      --purple-lt: #7B6EC8;
+      --purple-dk: #342878;
+      --purple-pale: #F0EEF9;
+      --purple-mid: #EDE9FA;
+      --black:     #0D0D0D;
+      --dark:      #1A1A1A;
+      --charcoal:  #333333;
+      --gray:      #666666;
+      --lt-gray:   #F5F5F5;
+      --white:     #FFFFFF;
+      --border:    #D8D4EE;
+      --ff-head:   'Playfair Display', serif;
+      --ff-body:   'Inter', sans-serif;
+      --shadow:    0 4px 24px rgba(74,61,154,0.1);
+      --shadow-lg: 0 12px 48px rgba(74,61,154,0.15);
+      --radius:    12px;
+      --transition: 0.3s ease;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--ff-body); color: var(--charcoal); background: var(--white); line-height: 1.6; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* â”€â”€â”€ TOPBAR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .topbar { background: var(--black); color: #aaa; font-size: 0.8rem; padding: 8px 0; }
+    .topbar-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0 24px; gap: 12px; flex-wrap: wrap;
+    }
+    .topbar a { color: #aaa; transition: color var(--transition); }
+    .topbar a:hover { color: #fff; }
+    .topbar-left, .topbar-right { display: flex; align-items: center; gap: 20px; }
+    .topbar i { color: var(--purple-lt); margin-right: 6px; }
+
+    /* â”€â”€â”€ HEADER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 1000;
+      box-shadow: 0 2px 16px rgba(74,61,154,0.08);
+    }
+    .header-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 14px 24px;
+    }
+    .logo-wrap { display: flex; align-items: center; }
+    .logo-img { height: 56px; width: auto; display: block; border-radius: 5px; }
+    .logo-img-footer { height: 50px; width: auto; display: block; border-radius: 5px; opacity: 0.9; }
+    header .logo-img { filter: none; }
+    @media (max-width: 480px) { .logo-img { height: 44px; } }
+
+    nav ul { display: flex; gap: 28px; align-items: center; }
+    nav a {
+      font-size: 0.88rem; font-weight: 500; color: var(--charcoal);
+      position: relative; transition: color var(--transition);
+    }
+    nav a::after {
+      content: ''; position: absolute; bottom: -4px; left: 0;
+      width: 0; height: 2px; background: var(--purple);
+      transition: width var(--transition);
+    }
+    nav a:hover, nav a.active { color: var(--purple); }
+    nav a:hover::after, nav a.active::after { width: 100%; }
+
+    .btn-cta {
+      background: var(--purple); color: var(--white);
+      padding: 10px 22px; border-radius: 6px;
+      font-size: 0.88rem; font-weight: 600; border: none; cursor: pointer;
+      transition: background var(--transition), transform 0.15s; white-space: nowrap;
+    }
+    .btn-cta:hover { background: var(--purple-dk); transform: translateY(-1px); }
+
+    .hamburger { display: none; background: none; border: none; cursor: pointer; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--dark); margin: 5px 0; transition: var(--transition); }
+
+    /* â”€â”€â”€ SECTION UTILITIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    section { padding: 80px 0; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .section-label {
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--purple); margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: var(--ff-head); font-size: 2.2rem; font-weight: 700;
+      color: var(--dark); line-height: 1.25; margin-bottom: 16px;
+    }
+    .section-sub {
+      font-size: 1rem; color: var(--gray); max-width: 560px;
+      line-height: 1.7; margin-bottom: 48px;
+    }
+    .text-center { text-align: center; }
+    .text-center .section-sub { margin: 0 auto 48px; }
+
+    /* â”€â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .hero {
+      position: relative; min-height: 90vh;
+      display: flex; align-items: center; overflow: hidden;
+      background: linear-gradient(135deg, #0d0d0d 0%, #1a1530 50%, #0d0d0d 100%);
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: url('images/IceStorm.webp') center/cover no-repeat;
+      opacity: 0.55;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(90deg, rgba(13,13,13,0.82) 0%, rgba(13,13,13,0.35) 55%, rgba(13,13,13,0.1) 100%);
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      max-width: 660px; padding: 0 24px 0 80px;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(74,61,154,0.25); border: 1px solid rgba(123,110,200,0.5);
+      color: #C4BCEF; font-size: 0.78rem; letter-spacing: 2px;
+      text-transform: uppercase; padding: 6px 16px; border-radius: 100px;
+      margin-bottom: 24px;
+    }
+    .hero-title {
+      font-family: var(--ff-head); font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700; color: var(--white); line-height: 1.18; margin-bottom: 20px;
+    }
+    .hero-title span { color: #C4BCEF; }
+    .hero-sub {
+      font-size: 1.05rem; color: rgba(255,255,255,0.72);
+      line-height: 1.7; margin-bottom: 36px; max-width: 500px;
+    }
+    .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--purple); color: var(--white);
+      padding: 14px 32px; border-radius: 6px;
+      font-weight: 600; font-size: 0.95rem;
+      transition: background var(--transition), transform 0.15s;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-primary:hover { background: var(--purple-dk); transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent; color: var(--white);
+      border: 1.5px solid rgba(255,255,255,0.45);
+      padding: 14px 32px; border-radius: 6px;
+      font-weight: 500; font-size: 0.95rem; transition: var(--transition);
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.08); }
+    .hero-scroll {
+      position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
+      z-index: 2; color: rgba(255,255,255,0.4); font-size: 0.72rem;
+      letter-spacing: 2px; text-transform: uppercase;
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+    }
+    .hero-scroll-line {
+      width: 1px; height: 40px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.45), transparent);
+      animation: scrollPulse 1.8s ease-in-out infinite;
+    }
+    @keyframes scrollPulse { 0%,100%{opacity:0.3} 50%{opacity:1} }
+
+    /* â”€â”€â”€ STATS BAR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .stats-bar { background: var(--black); padding: 0; }
+    .stats-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      border-left: 1px solid rgba(255,255,255,0.07);
+    }
+    .stat-item {
+      padding: 32px 24px; text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.07);
+    }
+    .stat-num {
+      font-family: var(--ff-head); font-size: 2.2rem; font-weight: 700;
+      color: var(--purple-lt); display: block;
+    }
+    .stat-label { font-size: 0.82rem; color: rgba(255,255,255,0.45); margin-top: 4px; letter-spacing: 0.5px; }
+
+    /* â”€â”€â”€ CATEGORIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .categories { background: var(--purple-pale); }
+    .cat-grid {
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px;
+    }
+    .cat-card {
+      background: var(--white); border-radius: var(--radius);
+      overflow: hidden; box-shadow: var(--shadow);
+      transition: transform var(--transition), box-shadow var(--transition); cursor: pointer;
+    }
+    .cat-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+    .cat-img { height: 160px; overflow: hidden; position: relative; }
+    .cat-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+    .cat-card:hover .cat-img img { transform: scale(1.06); }
+    .cat-img-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(52,40,120,0.55), transparent 60%);
+    }
+    .cat-body { padding: 16px 18px; }
+    .cat-icon { font-size: 1.3rem; color: var(--purple); margin-bottom: 7px; }
+    .cat-name { font-family: var(--ff-head); font-size: 1rem; font-weight: 600; color: var(--dark); }
+    .cat-count { font-size: 0.78rem; color: var(--gray); margin-top: 3px; }
+    .cat-arrow {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 0.78rem; color: var(--purple); font-weight: 600; margin-top: 10px;
+      opacity: 0; transition: opacity var(--transition);
+    }
+    .cat-card:hover .cat-arrow { opacity: 1; }
+
+    /* â”€â”€â”€ WHY CHOOSE US â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .why { background: var(--white); }
+    .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 64px; }
+    .why-left { display: flex; flex-direction: column; justify-content: center; }
+    .why-points { display: flex; flex-direction: column; gap: 18px; }
+    .why-point {
+      display: flex; gap: 16px; align-items: flex-start;
+      padding: 20px; background: var(--purple-pale); border-radius: 10px;
+      border-left: 3px solid var(--purple); transition: var(--transition);
+    }
+    .why-point:hover { background: var(--purple-mid); }
+    .why-icon {
+      width: 44px; height: 44px; min-width: 44px;
+      background: linear-gradient(135deg, var(--purple), var(--purple-dk));
+      border-radius: 10px; display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 1rem;
+    }
+    .why-point-title { font-weight: 600; color: var(--dark); margin-bottom: 4px; }
+    .why-point-text { font-size: 0.88rem; color: var(--gray); line-height: 1.6; }
+    .why-right { position: relative; }
+    .why-img-main { width: 100%; height: 520px; object-fit: cover; border-radius: 16px; box-shadow: var(--shadow-lg); }
+    .why-badge-box {
+      position: absolute; bottom: -20px; left: -20px;
+      background: var(--white); border-radius: 12px;
+      padding: 20px 24px; box-shadow: var(--shadow-lg); border: 1px solid var(--border);
+    }
+    .why-badge-num { font-family: var(--ff-head); font-size: 2.5rem; font-weight: 700; color: var(--purple); line-height: 1; }
+    .why-badge-text { font-size: 0.82rem; color: var(--gray); margin-top: 4px; }
+
+    /* â”€â”€â”€ FEATURED PRODUCTS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .products { background: var(--purple-pale); }
+    .products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .prod-card {
+      background: var(--white); border-radius: var(--radius);
+      overflow: hidden; box-shadow: var(--shadow);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .prod-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+    .prod-img { position: relative; overflow: hidden; height: 220px; }
+    .prod-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+    .prod-card:hover .prod-img img { transform: scale(1.07); }
+    .prod-badge {
+      position: absolute; top: 14px; left: 14px;
+      background: var(--purple); color: white;
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 1px;
+      text-transform: uppercase; padding: 4px 10px; border-radius: 4px;
+    }
+    .prod-body { padding: 20px; }
+    .prod-cat { font-size: 0.75rem; color: var(--purple); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px; }
+    .prod-name { font-family: var(--ff-head); font-size: 1.1rem; font-weight: 600; color: var(--dark); margin-bottom: 8px; }
+    .prod-desc { font-size: 0.85rem; color: var(--gray); line-height: 1.6; margin-bottom: 16px; }
+    .prod-foot { display: flex; justify-content: space-between; align-items: center; }
+    .prod-price strong { color: var(--dark); font-size: 0.92rem; }
+    .btn-enquire {
+      background: transparent; border: 1.5px solid var(--purple);
+      color: var(--purple); padding: 8px 16px; border-radius: 6px;
+      font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: var(--transition);
+    }
+    .btn-enquire:hover { background: var(--purple); color: white; }
+
+    /* â”€â”€â”€ ABOUT SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .about-strip { background: var(--white); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .about-imgs { position: relative; }
+    .about-img1 { width: 75%; border-radius: 16px; box-shadow: var(--shadow-lg); }
+    .about-img2 {
+      position: absolute; bottom: -32px; right: 0;
+      width: 55%; border-radius: 12px;
+      box-shadow: var(--shadow-lg); border: 4px solid var(--white);
+    }
+    .about-content { padding-bottom: 24px; }
+    .about-facts { display: flex; gap: 32px; margin: 28px 0; }
+    .fact { text-align: center; }
+    .fact-num { font-family: var(--ff-head); font-size: 2rem; font-weight: 700; color: var(--purple); }
+    .fact-label { font-size: 0.78rem; color: var(--gray); margin-top: 2px; }
+    .divider-v { width: 1px; background: var(--border); }
+
+    /* â”€â”€â”€ TESTIMONIALS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .testimonials { background: var(--black); }
+    .testimonials .section-title { color: var(--white); }
+    .testimonials .section-label { color: var(--purple-lt); }
+    .testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    @media (max-width: 900px) { .testi-grid { grid-template-columns: repeat(2,1fr); } }
+    .testi-card {
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius); padding: 28px; transition: var(--transition);
+    }
+    .testi-card:hover { background: rgba(74,61,154,0.15); border-color: rgba(123,110,200,0.35); }
+    .testi-stars { color: var(--purple-lt); font-size: 0.9rem; margin-bottom: 14px; }
+    .testi-text { color: rgba(255,255,255,0.72); font-size: 0.9rem; line-height: 1.75; margin-bottom: 20px; font-style: italic; }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .testi-avatar {
+      width: 42px; height: 42px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--purple), var(--purple-dk));
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-weight: 700; font-size: 0.9rem;
+    }
+    .testi-name { font-weight: 600; color: var(--white); font-size: 0.9rem; }
+    .testi-loc { font-size: 0.78rem; color: rgba(255,255,255,0.4); }
+    .testi-pro { border-color: rgba(123,110,200,0.25); }
+    .testi-pro:hover { background: rgba(74,61,154,0.18); border-color: rgba(123,110,200,0.45); }
+    .testi-pro-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: var(--purple-lt);
+      background: rgba(74,61,154,0.25); border: 1px solid rgba(123,110,200,0.3);
+      padding: 4px 10px; border-radius: 100px; margin-bottom: 12px;
+    }
+
+    /* â”€â”€â”€ SCROLL PROGRESS BAR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .scroll-progress {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+      background: linear-gradient(90deg, var(--purple), var(--purple-lt));
+      z-index: 9999; transition: width 0.1s linear;
+    }
+
+    /* â”€â”€â”€ HERO FLOATING BLOBS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .hero-blob {
+      position: absolute; border-radius: 50%;
+      background: var(--purple); opacity: 0.07; filter: blur(60px);
+      animation: blobFloat 8s ease-in-out infinite;
+      pointer-events: none;
+    }
+    .hero-blob-1 { width: 400px; height: 400px; top: -100px; right: 10%; animation-delay: 0s; }
+    .hero-blob-2 { width: 250px; height: 250px; bottom: 10%; right: 30%; animation-delay: 3s; }
+    @keyframes blobFloat {
+      0%,100% { transform: translateY(0) scale(1); }
+      50%      { transform: translateY(-30px) scale(1.05); }
+    }
+
+    /* â”€â”€â”€ STAGGER FADE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .stagger > * { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .stagger.visible > *:nth-child(1) { opacity:1; transform:none; transition-delay:0.05s; }
+    .stagger.visible > *:nth-child(2) { opacity:1; transform:none; transition-delay:0.15s; }
+    .stagger.visible > *:nth-child(3) { opacity:1; transform:none; transition-delay:0.25s; }
+    .stagger.visible > *:nth-child(4) { opacity:1; transform:none; transition-delay:0.35s; }
+    .stagger.visible > *:nth-child(5) { opacity:1; transform:none; transition-delay:0.45s; }
+    .stagger.visible > *:nth-child(6) { opacity:1; transform:none; transition-delay:0.55s; }
+
+    /* â”€â”€â”€ SLIDE FROM LEFT / RIGHT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .slide-left  { opacity:0; transform:translateX(-40px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .slide-right { opacity:0; transform:translateX(40px);  transition: opacity 0.8s ease, transform 0.8s ease; }
+    .slide-left.visible, .slide-right.visible { opacity:1; transform:translateX(0); }
+
+    /* â”€â”€â”€ SECTION LABEL ANIMATED UNDERLINE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .section-label { position: relative; display: inline-block; }
+    .section-label::after {
+      content: ''; position: absolute; bottom: -4px; left: 0;
+      width: 0; height: 2px; background: var(--purple);
+      transition: width 0.6s ease 0.3s;
+    }
+    .section-label.visible::after { width: 100%; }
+
+    /* â”€â”€â”€ SHINE BUTTON â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .btn-primary, .btn-cta, .btn-submit {
+      position: relative; overflow: hidden;
+    }
+    .btn-primary::after, .btn-cta::after, .btn-submit::after {
+      content: '';
+      position: absolute; top: 0; left: -100%;
+      width: 60%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transform: skewX(-20deg);
+      transition: left 0.5s ease;
+    }
+    .btn-primary:hover::after, .btn-cta:hover::after, .btn-submit:hover::after { left: 150%; }
+
+    /* â”€â”€â”€ CARD HOVER LIFT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .cat-card:hover, .prod-card:hover {
+      transform: translateY(-8px) scale(1.01);
+    }
+    .why-point { transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease; }
+    .why-point:hover { transform: translateX(6px); box-shadow: -4px 0 0 var(--purple); }
+
+    /* â”€â”€â”€ WAVE DIVIDER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .wave-divider { line-height: 0; }
+    .wave-divider svg { display: block; width: 100%; }
+
+    /* â”€â”€â”€ TESTIMONIALS CAROUSEL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .testimonials { background: var(--black); overflow: hidden; }
+    .testimonials .section-title { color: var(--white); }
+    .testimonials .section-label { color: var(--purple-lt); }
+    .testi-carousel-wrap { position: relative; margin-top: 12px; }
+    .testi-track-outer { overflow: hidden; }
+    .testi-track {
+      display: flex; gap: 24px;
+      transition: transform 0.55s cubic-bezier(0.25,0.46,0.45,0.94);
+      will-change: transform;
+    }
+    .testi-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius); padding: 28px 26px;
+      flex: 0 0 calc(33.333% - 16px);
+      transition: background 0.3s, border-color 0.3s, transform 0.3s;
+      box-sizing: border-box;
+    }
+    .testi-card:hover {
+      background: rgba(74,61,154,0.15);
+      border-color: rgba(123,110,200,0.35);
+      transform: translateY(-4px);
+    }
+    .testi-stars { color: var(--purple-lt); font-size: 0.88rem; margin-bottom: 14px; }
+    .testi-text { color: rgba(255,255,255,0.72); font-size: 0.88rem; line-height: 1.8; margin-bottom: 20px; font-style: italic; }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .testi-avatar {
+      width: 44px; height: 44px; min-width: 44px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--purple), var(--purple-dk));
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-weight: 700; font-size: 0.9rem;
+    }
+    .testi-name { font-weight: 600; color: var(--white); font-size: 0.9rem; }
+    .testi-loc  { font-size: 0.76rem; color: rgba(255,255,255,0.4); margin-top: 2px; }
+    .testi-pro  { border-color: rgba(123,110,200,0.2); }
+    .testi-pro:hover { background: rgba(74,61,154,0.18); }
+    .testi-pro-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: var(--purple-lt);
+      background: rgba(74,61,154,0.25); border: 1px solid rgba(123,110,200,0.3);
+      padding: 3px 10px; border-radius: 100px; margin-bottom: 10px;
+    }
+    /* Nav arrows */
+    .testi-arrow {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      width: 44px; height: 44px; border-radius: 50%;
+      background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+      color: white; font-size: 1rem; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s, border-color 0.2s, transform 0.2s;
+      z-index: 10;
+    }
+    .testi-arrow:hover { background: var(--purple); border-color: var(--purple); transform: translateY(-50%) scale(1.08); }
+    .testi-prev { left: -22px; }
+    .testi-next { right: -22px; }
+    /* Dots */
+    .testi-dots { display: flex; justify-content: center; gap: 8px; margin-top: 32px; }
+    .testi-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: rgba(255,255,255,0.2); cursor: pointer;
+      transition: background 0.3s, width 0.3s; border: none;
+    }
+    .testi-dot.active { background: var(--purple-lt); width: 24px; border-radius: 4px; }
+    /* Mobile */
+    @media (max-width: 900px) {
+      .testi-card { flex: 0 0 calc(50% - 12px); }
+      .testi-prev { left: 0; }
+      .testi-next { right: 0; }
+    }
+    @media (max-width: 580px) {
+      .testi-card { flex: 0 0 calc(100% - 0px); }
+    }
+
+    /* â”€â”€â”€ CTA BANNER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--purple-dk) 0%, var(--purple) 60%, var(--purple-lt) 100%);
+      padding: 72px 0; text-align: center;
+    }
+    .cta-banner h2 { font-family: var(--ff-head); font-size: 2.4rem; font-weight: 700; color: var(--white); margin-bottom: 16px; }
+    .cta-banner p { color: rgba(255,255,255,0.82); font-size: 1.05rem; margin-bottom: 36px; }
+    .btn-white {
+      background: var(--white); color: var(--purple-dk);
+      padding: 14px 36px; border-radius: 6px;
+      font-weight: 700; font-size: 1rem;
+      display: inline-flex; align-items: center; gap: 8px; transition: var(--transition);
+    }
+    .btn-white:hover { background: var(--purple-pale); transform: translateY(-2px); }
+    .cta-contact-strip { display: flex; justify-content: center; gap: 40px; margin-top: 28px; flex-wrap: wrap; }
+    .cta-contact-strip a {
+      color: rgba(255,255,255,0.88); font-size: 0.9rem;
+      display: flex; align-items: center; gap: 8px; transition: color var(--transition);
+    }
+    .cta-contact-strip a:hover { color: white; }
+
+    /* â”€â”€â”€ GALLERY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .gallery { background: var(--white); }
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .gallery-item { overflow: hidden; border-radius: 10px; position: relative; cursor: pointer; }
+    .gallery-item:first-child { grid-column: span 2; grid-row: span 2; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; min-height: 200px; }
+    .gallery-item:first-child img { min-height: 400px; }
+    .gallery-item:hover img { transform: scale(1.05); }
+    .gallery-overlay {
+      position: absolute; inset: 0;
+      background: rgba(74,61,154,0); display: flex;
+      align-items: center; justify-content: center; transition: var(--transition);
+    }
+    .gallery-overlay i { color: white; font-size: 2rem; opacity: 0; transition: var(--transition); }
+    .gallery-item:hover .gallery-overlay { background: rgba(52,40,120,0.45); }
+    .gallery-item:hover .gallery-overlay i { opacity: 1; }
+
+    /* â”€â”€â”€ CONTACT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .contact-section { background: var(--purple-pale); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 48px; align-items: start; }
+    .contact-info { display: flex; flex-direction: column; gap: 20px; }
+    .contact-info-title { font-family: var(--ff-head); font-size: 1.6rem; color: var(--dark); margin-bottom: 8px; }
+    .contact-detail {
+      display: flex; gap: 14px; align-items: flex-start;
+      padding: 16px 18px; background: var(--white);
+      border-radius: 10px; box-shadow: var(--shadow); border-left: 3px solid var(--purple);
+    }
+    .contact-detail-icon {
+      width: 40px; height: 40px; min-width: 40px;
+      background: linear-gradient(135deg, var(--purple), var(--purple-dk));
+      border-radius: 8px; display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 0.95rem;
+    }
+    .contact-detail-label { font-size: 0.75rem; color: var(--gray); margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .contact-detail-val { font-size: 0.95rem; font-weight: 500; color: var(--dark); }
+    .contact-form { background: var(--white); border-radius: 16px; padding: 36px; box-shadow: var(--shadow-lg); }
+    .form-title { font-family: var(--ff-head); font-size: 1.5rem; color: var(--dark); margin-bottom: 24px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+    .form-group label { font-size: 0.82rem; font-weight: 600; color: var(--charcoal); }
+    .form-group input, .form-group select, .form-group textarea {
+      padding: 11px 14px; border: 1.5px solid var(--border);
+      border-radius: 8px; font-family: var(--ff-body); font-size: 0.9rem;
+      color: var(--dark); background: var(--white);
+      transition: border-color var(--transition), box-shadow var(--transition); outline: none;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--purple); box-shadow: 0 0 0 3px rgba(74,61,154,0.12);
+    }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+    .btn-submit {
+      width: 100%; background: var(--purple); color: white;
+      padding: 14px; border: none; border-radius: 8px;
+      font-size: 1rem; font-weight: 600; cursor: pointer; font-family: var(--ff-body);
+      transition: background var(--transition), transform 0.15s;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .btn-submit:hover { background: var(--purple-dk); transform: translateY(-1px); }
+
+    /* â”€â”€â”€ TILES SHOWCASE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .tiles-showcase { background: var(--white); }
+    .tile-tabs {
+      display: flex; gap: 10px; flex-wrap: wrap;
+      justify-content: center; margin-bottom: 36px;
+    }
+    .tile-tab {
+      padding: 9px 22px; border-radius: 100px;
+      border: 1.5px solid var(--border); background: var(--white);
+      font-size: 0.85rem; font-weight: 600; color: var(--gray);
+      cursor: pointer; transition: var(--transition); font-family: var(--ff-body);
+    }
+    .tile-tab:hover, .tile-tab.active {
+      background: var(--purple); border-color: var(--purple);
+      color: white;
+    }
+    .tiles-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+    .tile-item {
+      position: relative; overflow: hidden;
+      border-radius: 10px; aspect-ratio: 1/1; cursor: pointer;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .tile-item.tile-wide { grid-column: span 2; aspect-ratio: 2/1; }
+    .tile-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .tile-item:hover img { transform: scale(1.06); }
+    .tile-overlay {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: linear-gradient(to top, rgba(13,13,13,0.82), transparent);
+      padding: 16px 14px 12px;
+      transform: translateY(100%); transition: transform 0.35s ease;
+    }
+    .tile-item:hover .tile-overlay { transform: translateY(0); }
+    .tile-overlay span {
+      font-size: 0.78rem; color: white; font-weight: 500;
+      letter-spacing: 0.3px;
+    }
+    .tile-item.hidden { display: none; }
+    @media (max-width: 1024px) { .tiles-grid { grid-template-columns: repeat(3,1fr); } }
+    @media (max-width: 768px) {
+      .tiles-grid { grid-template-columns: repeat(2,1fr); }
+      .tile-item.tile-wide { grid-column: span 2; }
+    }
+
+    /* â”€â”€â”€ GRANITE SHOWCASE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .granite-section { background: var(--purple-pale); padding: 80px 0; }
+    .granite-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 320px 320px;
+      gap: 14px;
+    }
+    .granite-item {
+      position: relative; overflow: hidden;
+      border-radius: 12px; cursor: pointer;
+    }
+    .granite-item.granite-tall { grid-row: span 2; }
+    .granite-item.granite-wide { grid-column: span 2; }
+    .granite-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.55s ease;
+    }
+    .granite-item:hover img { transform: scale(1.05); }
+    .granite-label {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 20px 18px 16px;
+      background: linear-gradient(to top, rgba(13,13,13,0.85), transparent);
+      transform: translateY(6px); transition: transform var(--transition);
+    }
+    .granite-item:hover .granite-label { transform: translateY(0); }
+    .granite-tag {
+      display: block; font-family: var(--ff-head);
+      font-size: 1.05rem; font-weight: 700; color: white; margin-bottom: 3px;
+    }
+    .granite-sub { font-size: 0.78rem; color: rgba(255,255,255,0.65); }
+    .granite-item::after {
+      content: ''; position: absolute; inset: 0; border-radius: 12px;
+      border: 2px solid transparent; transition: border-color var(--transition);
+    }
+    .granite-item:hover::after { border-color: var(--purple-lt); }
+    /* Swatches */
+    .swatch-row {
+      display: grid; grid-template-columns: repeat(6,1fr); gap: 14px;
+    }
+    .swatch-card {
+      background: var(--white); border-radius: 10px;
+      overflow: hidden; box-shadow: var(--shadow);
+      transition: transform var(--transition), box-shadow var(--transition);
+      cursor: pointer;
+    }
+    .swatch-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .swatch-card img { width: 100%; height: 100px; object-fit: cover; }
+    .swatch-card span {
+      display: block; font-size: 0.75rem; font-weight: 600;
+      color: var(--dark); text-align: center; padding: 8px 4px;
+    }
+    @media (max-width: 1024px) {
+      .granite-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+      .granite-item.granite-tall { grid-row: span 1; }
+      .swatch-row { grid-template-columns: repeat(3,1fr); }
+    }
+    @media (max-width: 768px) {
+      .granite-grid { grid-template-columns: 1fr 1fr; }
+      .granite-item.granite-wide { grid-column: span 2; }
+      .swatch-row { grid-template-columns: repeat(2,1fr); }
+    }
+
+    /* â”€â”€â”€ QUARTZ INSPIRATIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .quartz-section { background: var(--black); padding: 80px 0; }
+    .quartz-section .section-label { color: var(--purple-lt); }
+    .quartz-section .section-title { color: var(--white); }
+    .quartz-section .section-sub { color: rgba(255,255,255,0.55); }
+    .quartz-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 280px 280px;
+      gap: 14px;
+    }
+    .quartz-item {
+      position: relative; overflow: hidden; border-radius: 12px; cursor: pointer;
+    }
+    .quartz-item.quartz-tall { grid-row: span 2; }
+    .quartz-item.quartz-wide { grid-column: span 2; }
+    .quartz-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .quartz-item:hover img { transform: scale(1.05); }
+    .quartz-label {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 20px 20px 18px;
+      background: linear-gradient(to top, rgba(13,13,13,0.88) 0%, rgba(13,13,13,0.3) 70%, transparent 100%);
+      transform: translateY(4px);
+      transition: transform var(--transition);
+    }
+    .quartz-item:hover .quartz-label { transform: translateY(0); }
+    .quartz-tag {
+      display: block; font-family: var(--ff-head); font-size: 1.05rem;
+      font-weight: 700; color: var(--white); margin-bottom: 4px;
+    }
+    .quartz-sub { font-size: 0.78rem; color: rgba(255,255,255,0.65); }
+    .quartz-item::after {
+      content: ''; position: absolute; inset: 0;
+      border: 2px solid transparent; border-radius: 12px;
+      transition: border-color var(--transition);
+    }
+    .quartz-item:hover::after { border-color: var(--purple-lt); }
+    @media (max-width: 768px) {
+      .quartz-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+      }
+      .quartz-item.quartz-tall { grid-row: span 1; }
+      .quartz-item.quartz-wide { grid-column: span 2; }
+    }
+    @media (max-width: 480px) {
+      .quartz-grid { grid-template-columns: 1fr; }
+      .quartz-item.quartz-wide { grid-column: span 1; }
+      .quartz-grid { grid-template-rows: auto; }
+    }
+
+    /* â”€â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    footer { background: var(--black); color: rgba(255,255,255,0.55); }
+    .footer-main {
+      max-width: 1200px; margin: 0 auto; padding: 60px 24px 40px;
+      display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px;
+    }
+    .footer-desc { font-size: 0.85rem; line-height: 1.7; margin-bottom: 20px; margin-top: 14px; }
+    .footer-socials { display: flex; gap: 12px; }
+    .social-btn {
+      width: 36px; height: 36px; border-radius: 8px;
+      background: rgba(255,255,255,0.07);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.55); font-size: 0.9rem; transition: var(--transition);
+    }
+    .social-btn:hover { background: var(--purple); color: white; }
+    .footer-col-title {
+      font-size: 0.85rem; font-weight: 700; color: var(--white);
+      text-transform: uppercase; letter-spacing: 1px;
+      margin-bottom: 20px; padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer-links { display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a {
+      font-size: 0.85rem; color: rgba(255,255,255,0.5);
+      transition: color var(--transition); display: flex; align-items: center; gap: 6px;
+    }
+    .footer-links a:hover { color: #C4BCEF; }
+    .footer-links a i { font-size: 0.65rem; color: var(--purple-lt); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.07); padding: 20px 24px;
+      max-width: 1200px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.8rem; color: rgba(255,255,255,0.3); flex-wrap: wrap; gap: 8px;
+    }
+    .footer-motto { color: var(--purple-lt); font-style: italic; font-size: 0.82rem; }
+
+    /* â”€â”€â”€ WHATSAPP FLOAT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .whatsapp-float {
+      position: fixed; bottom: 28px; right: 28px; z-index: 999;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #25D366; color: white;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
+
+    /* â”€â”€â”€ MOBILE NAV â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .mobile-nav {
+      display: none; background: var(--white); border-top: 1px solid var(--border);
+      position: absolute; top: 100%; left: 0; right: 0;
+      box-shadow: 0 8px 24px rgba(74,61,154,0.12); z-index: 999;
+    }
+    .mobile-nav.open { display: block; }
+    .mobile-nav ul { display: flex; flex-direction: column; }
+    .mobile-nav a {
+      display: block; padding: 14px 24px; font-size: 0.95rem; color: var(--charcoal);
+      border-bottom: 1px solid var(--border); font-weight: 500;
+    }
+    .mobile-nav a:hover { background: var(--purple-pale); color: var(--purple); }
+
+    /* â”€â”€â”€ RESPONSIVE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    @media (max-width: 1100px) {
+      .cat-grid { grid-template-columns: repeat(3,1fr); }
+    }
+    @media (max-width: 1024px) {
+      .products-grid { grid-template-columns: repeat(2,1fr); }
+      .footer-main { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .topbar-left { display: none; }
+      nav { display: none; }
+      .hamburger { display: block; }
+      .header-inner .btn-cta { display: none; }
+      .hero-content { padding: 0 24px; }
+      .hero-title { font-size: 2rem; }
+      .stats-inner { grid-template-columns: repeat(2,1fr); }
+      .why-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .why-right { display: none; }
+      .about-imgs { min-height: 260px; margin-bottom: 48px; }
+      .about-img2 { display: none; }
+      .testi-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-item:first-child { grid-column: span 2; }
+      .footer-main { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      section { padding: 56px 0; }
+      .section-title { font-size: 1.7rem; }
+      .cta-banner h2 { font-size: 1.7rem; }
+      .cat-grid { grid-template-columns: repeat(2,1fr); }
+    }
+    @media (max-width: 480px) {
+      .products-grid { grid-template-columns: 1fr; }
+      .stats-inner { grid-template-columns: 1fr 1fr; }
+      .hero { min-height: 70vh; }
+    }
+
+    /* â”€â”€â”€ FADE-IN â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/919314021950" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span><i class="fas fa-map-marker-alt"></i>Opp. Metro Pillar No. 30, Gopalpura Bypass, Mansarovar, Jaipur</span>
+      <span><i class="fas fa-clock"></i>Open until 8:00 PM</span>
+    </div>
+    <div class="topbar-right">
+      <a href="tel:+919314021950"><i class="fas fa-phone"></i>+91 93140 21950</a>
+      <a href="https://wa.me/919314021950" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+      <a href="https://instagram.com/aashiyana_decor" target="_blank"><i class="fab fa-instagram"></i>@aashiyana_decor</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="header-inner">
+    <a href="#home" class="logo-wrap">
+      <img src="logo.svg" alt="Aashiyana Decor â€“ For Stylish Living" class="logo-img"/>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn-cta">Get a Quote</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#why-us">Why Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â• HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-blob hero-blob-1"></div>
+  <div class="hero-blob hero-blob-2"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <i class="fas fa-gem"></i> Jaipur's Premier Stone & Tile Supplier
+    </div>
+    <h1 class="hero-title">
+      Transform Your Space with <span>Premium Marble,</span> Granite & Tiles
+    </h1>
+    <p class="hero-sub">
+      Jaipur's trusted source for Imported Marble, Granite, Tiles, Natural Stone & Quartz since 2005. Quality you can feel. Style you will love.
+    </p>
+    <div class="hero-btns">
+      <a href="#products" class="btn-primary"><i class="fas fa-th-large"></i> Explore Products</a>
+      <a href="#contact" class="btn-outline"><i class="fas fa-phone"></i> Contact Us</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â• STATS BAR â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <span class="stat-num" data-target="20" data-suffix="+">0</span>
+      <span class="stat-label">Years of Excellence</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="5" data-suffix="">0</span>
+      <span class="stat-label">Premium Product Lines</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="1500" data-suffix="+">0</span>
+      <span class="stat-label">Happy Clients</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="4" data-suffix=".0â˜…">0</span>
+      <span class="stat-label">JustDial Rating</span>
+    </div>
+  </div>
+</div>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â• CATEGORIES â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="categories" id="categories">
+  <div class="container">
+    <div class="text-center fade-in">
+      <p class="section-label">What We Offer</p>
+      <h2 class="section-title">Our Product Categories</h2>
+      <p class="section-sub">From luxurious imported marble to engineered quartz â€” everything your dream space needs, all under one roof in Jaipur.</p>
+    </div>
+    <div class="cat-grid stagger">
+
+      <div class="cat-card fade-in">
+        <div class="cat-img">
+          <img src="images/tiles/leather120_tile_08.webp" alt="Tiles" loading="lazy"/>
+          <div class="cat-img-overlay"></div>
+        </div>
+        <div class="cat-body">
+          <div class="cat-icon"><i class="fas fa-border-all"></i></div>
+          <div class="cat-name">Tiles</div>
+          <div class="cat-count">Floor Â· Wall Â· Outdoor</div>
+          <div class="cat-arrow">View Range <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </div>
+
+      <div class="cat-card fade-in">
+        <div class="cat-img">
+          <img src="images/granite/black-pearl-staircase.webp" alt="Granite" loading="lazy"/>
+          <div class="cat-img-overlay"></div>
+        </div>
+        <div class="cat-body">
+          <div class="cat-icon"><i class="fas fa-layer-group"></i></div>
+          <div class="cat-name">Granite</div>
+          <div class="cat-count">Flooring Â· Countertops Â· Slabs</div>
+          <div class="cat-arrow">View Range <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </div>
+
+      <div class="cat-card fade-in">
+        <div class="cat-img">
+          <img src="images/tiles/syncstone_tile_02.webp" alt="Imported Marble" loading="lazy"/>
+          <div class="cat-img-overlay"></div>
+        </div>
+        <div class="cat-body">
+          <div class="cat-icon"><i class="fas fa-gem"></i></div>
+          <div class="cat-name">Imported Marble</div>
+          <div class="cat-count">Italian Â· Spanish Â· Turkish</div>
+          <div class="cat-arrow">View Range <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </div>
+
+      <div class="cat-card fade-in">
+        <div class="cat-img">
+          <img src="images/tiles/bold60_tile_12.webp" alt="Natural Stone" loading="lazy"/>
+          <div class="cat-img-overlay"></div>
+        </div>
+        <div class="cat-body">
+          <div class="cat-icon"><i class="fas fa-mountain"></i></div>
+          <div class="cat-name">Natural Stone</div>
+          <div class="cat-count">Sand Stone Â· Slate Â· Quartzite</div>
+          <div class="cat-arrow">View Range <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </div>
+
+      <div class="cat-card fade-in">
+        <div class="cat-img">
+          <img src="images/MorningMist.webp" alt="Quartz" loading="lazy"/>
+          <div class="cat-img-overlay"></div>
+        </div>
+        <div class="cat-body">
+          <div class="cat-icon"><i class="fas fa-cube"></i></div>
+          <div class="cat-name">Quartz</div>
+          <div class="cat-count">Engineered Â· Countertops Â· Vanities</div>
+          <div class="cat-arrow">View Range <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â• TILES SHOWCASE â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="tiles-showcase" id="tiles-showcase">
+  <div class="container">
+    <div class="text-center fade-in">
+      <p class="section-label">Mozart Collection</p>
+      <h2 class="section-title">Our Tile Collection</h2>
+      <p class="section-sub">Premium full-body tiles in leather, marble & stone finishes â€” 600Ã—600mm, 600Ã—1200mm and more. Zero maintenance. Timeless style.</p>
+    </div>
+
+    <!-- TABS -->
+    <div class="tile-tabs fade-in">
+      <button class="tile-tab active" onclick="filterTiles('all', this)">All</button>
+      <button class="tile-tab" onclick="filterTiles('bold60', this)">Bold 60Ã—60</button>
+      <button class="tile-tab" onclick="filterTiles('leather120', this)">Leather 60Ã—120</button>
+      <button class="tile-tab" onclick="filterTiles('syncstone', this)">Syncstone</button>
+    </div>
+
+    <div class="tiles-grid fade-in">
+      <!-- BOLD 60 -->
+      <div class="tile-item" data-cat="bold60">
+        <img src="images/tiles/bold60_tile_01.webp" alt="Bold Tile â€“ Taupe" loading="lazy"/>
+        <div class="tile-overlay"><span>Bold 60Ã—60 Â· Taupe</span></div>
+      </div>
+      <div class="tile-item" data-cat="bold60">
+        <img src="images/tiles/bold60_tile_04.webp" alt="Bold Tile â€“ Dark Brown" loading="lazy"/>
+        <div class="tile-overlay"><span>Bold 60Ã—60 Â· Charcoal Brown</span></div>
+      </div>
+      <div class="tile-item" data-cat="bold60">
+        <img src="images/tiles/bold60_tile_11.webp" alt="Bold Tile â€“ Light Brown" loading="lazy"/>
+        <div class="tile-overlay"><span>Bold 60Ã—60 Â· Sandy Brown</span></div>
+      </div>
+      <div class="tile-item tile-wide" data-cat="bold60">
+        <img src="images/tiles/bold60_tile_12.webp" alt="Bold Tile Outdoor" loading="lazy"/>
+        <div class="tile-overlay"><span>Bold 60Ã—60 Â· Outdoor Patio Application</span></div>
+      </div>
+      <div class="tile-item" data-cat="bold60">
+        <img src="images/tiles/bold60_tile_13.webp" alt="Bold Tile Driveway" loading="lazy"/>
+        <div class="tile-overlay"><span>Bold 60Ã—60 Â· Driveway Application</span></div>
+      </div>
+
+      <!-- LEATHER 120 -->
+      <div class="tile-item" data-cat="leather120">
+        <img src="images/tiles/leather120_tile_02.webp" alt="Leather Tile â€“ Warm Brown" loading="lazy"/>
+        <div class="tile-overlay"><span>Leather 60Ã—120 Â· Warm Brown</span></div>
+      </div>
+      <div class="tile-item" data-cat="leather120">
+        <img src="images/tiles/leather120_tile_04.webp" alt="Leather Tile â€“ Grey" loading="lazy"/>
+        <div class="tile-overlay"><span>Leather 60Ã—120 Â· Ash Grey</span></div>
+      </div>
+      <div class="tile-item" data-cat="leather120">
+        <img src="images/tiles/leather120_tile_06.webp" alt="Leather Tile â€“ Light Grey" loading="lazy"/>
+        <div class="tile-overlay"><span>Leather 60Ã—120 Â· Silver Grey</span></div>
+      </div>
+      <div class="tile-item" data-cat="leather120">
+        <img src="images/tiles/leather120_tile_07.webp" alt="Leather Tile â€“ Pale Grey" loading="lazy"/>
+        <div class="tile-overlay"><span>Leather 60Ã—120 Â· Pearl Grey</span></div>
+      </div>
+      <div class="tile-item tile-wide" data-cat="leather120">
+        <img src="images/tiles/leather120_tile_08.webp" alt="Leather Tile Bathroom" loading="lazy"/>
+        <div class="tile-overlay"><span>Leather 60Ã—120 Â· Bathroom Application</span></div>
+      </div>
+      <div class="tile-item" data-cat="leather120">
+        <img src="images/tiles/leather120_tile_09.webp" alt="Leather Tile â€“ Dark Charcoal" loading="lazy"/>
+        <div class="tile-overlay"><span>Leather 60Ã—120 Â· Dark Charcoal</span></div>
+      </div>
+      <div class="tile-item tile-wide" data-cat="leather120">
+        <img src="images/tiles/leather120_tile_10.webp" alt="Leather Tile Bedroom" loading="lazy"/>
+        <div class="tile-overlay"><span>Leather 60Ã—120 Â· Bedroom Feature Wall</span></div>
+      </div>
+      <div class="tile-item" data-cat="leather120">
+        <img src="images/tiles/leather120_tile_11.webp" alt="Leather Tile â€“ Beige" loading="lazy"/>
+        <div class="tile-overlay"><span>Leather 60Ã—120 Â· Warm Beige</span></div>
+      </div>
+      <div class="tile-item" data-cat="leather120">
+        <img src="images/tiles/leather120_tile_12.webp" alt="Leather Tile Texture" loading="lazy"/>
+        <div class="tile-overlay"><span>Leather 60Ã—120 Â· Cream Texture</span></div>
+      </div>
+      <div class="tile-item" data-cat="leather120">
+        <img src="images/tiles/leather120_tile_13.webp" alt="Leather Tile Interior" loading="lazy"/>
+        <div class="tile-overlay"><span>Leather 60Ã—120 Â· Cream Interior Scene</span></div>
+      </div>
+
+      <!-- SYNCSTONE -->
+      <div class="tile-item tile-wide" data-cat="syncstone">
+        <img src="images/tiles/syncstone_tile_02.webp" alt="Syncstone White Marble Floor" loading="lazy"/>
+        <div class="tile-overlay"><span>Syncstone Â· White Marble Floor</span></div>
+      </div>
+      <div class="tile-item" data-cat="syncstone">
+        <img src="images/tiles/syncstone_tile_03.webp" alt="Syncstone White Marble" loading="lazy"/>
+        <div class="tile-overlay"><span>Syncstone Â· Statuario White</span></div>
+      </div>
+      <div class="tile-item" data-cat="syncstone">
+        <img src="images/tiles/syncstone_tile_04.webp" alt="Syncstone Marble Slab" loading="lazy"/>
+        <div class="tile-overlay"><span>Syncstone Â· Calacatta Slab</span></div>
+      </div>
+      <div class="tile-item" data-cat="syncstone">
+        <img src="images/tiles/syncstone_tile_05.webp" alt="Syncstone Gold Marble" loading="lazy"/>
+        <div class="tile-overlay"><span>Syncstone Â· Calacatta Gold</span></div>
+      </div>
+      <div class="tile-item" data-cat="syncstone">
+        <img src="images/tiles/syncstone_tile_06.webp" alt="Syncstone White Stone" loading="lazy"/>
+        <div class="tile-overlay"><span>Syncstone Â· Arctic White Stone</span></div>
+      </div>
+      <div class="tile-item" data-cat="syncstone">
+        <img src="images/tiles/syncstone_tile_07.webp" alt="Syncstone Dark Stone" loading="lazy"/>
+        <div class="tile-overlay"><span>Syncstone Â· Graphite Black</span></div>
+      </div>
+      <div class="tile-item tile-wide" data-cat="syncstone">
+        <img src="images/tiles/syncstone_tile_08.webp" alt="Syncstone Exterior" loading="lazy"/>
+        <div class="tile-overlay"><span>Syncstone Â· Exterior Cladding Application</span></div>
+      </div>
+      <div class="tile-item" data-cat="syncstone">
+        <img src="images/tiles/syncstone_tile_09.webp" alt="Syncstone Beige Stone" loading="lazy"/>
+        <div class="tile-overlay"><span>Syncstone Â· Sandstone Beige</span></div>
+      </div>
+      <div class="tile-item" data-cat="syncstone">
+        <img src="images/tiles/syncstone_tile_10.webp" alt="Syncstone Granite" loading="lazy"/>
+        <div class="tile-overlay"><span>Syncstone Â· Granite Speckle</span></div>
+      </div>
+      <div class="tile-item tile-wide" data-cat="syncstone">
+        <img src="images/tiles/syncstone_tile_11.webp" alt="Syncstone Blue Marble" loading="lazy"/>
+        <div class="tile-overlay"><span>Syncstone Â· Azul Blue Marble Floor</span></div>
+      </div>
+      <div class="tile-item" data-cat="syncstone">
+        <img src="images/tiles/syncstone_tile_12.webp" alt="Syncstone Tile" loading="lazy"/>
+        <div class="tile-overlay"><span>Syncstone Â· Premium Collection</span></div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:40px;" class="fade-in">
+      <a href="#contact" class="btn-primary" style="display:inline-flex;">
+        <i class="fas fa-border-all"></i> Enquire About Tiles
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â• GRANITE SHOWCASE â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="granite-section" id="granite-showcase">
+  <div class="container">
+    <div class="text-center fade-in">
+      <p class="section-label">Natural Stone. Eternal Beauty.</p>
+      <h2 class="section-title">Our Granite Collection</h2>
+      <p class="section-sub">From dramatic Black Galaxy feature walls to warm Rosy Pink kitchen countertops â€” our granite range brings character and permanence to every space.</p>
+    </div>
+
+    <div class="granite-grid fade-in">
+
+      <!-- Lifestyle hero â€” TV wall -->
+      <div class="granite-item granite-tall">
+        <img src="images/granite/GalaxyBlack.webp" alt="Black Galaxy Granite TV Wall" loading="lazy"/>
+        <div class="granite-label">
+          <span class="granite-tag">Black Galaxy</span>
+          <span class="granite-sub">Stunning TV feature wall with LED accents</span>
+        </div>
+      </div>
+
+      <!-- Staircase -->
+      <div class="granite-item">
+        <img src="images/granite/black-pearl-staircase.webp" alt="Black Pearl Granite Staircase" loading="lazy"/>
+        <div class="granite-label">
+          <span class="granite-tag">Black Pearl</span>
+          <span class="granite-sub">Polished staircase application</span>
+        </div>
+      </div>
+
+      <!-- Shelves -->
+      <div class="granite-item">
+        <img src="images/granite/RajasthanBlack.webp" alt="Blue Pearl Granite Shelves" loading="lazy"/>
+        <div class="granite-label">
+          <span class="granite-tag">Blue Pearl</span>
+          <span class="granite-sub">Floating shelves â€” Indian home dÃ©cor</span>
+        </div>
+      </div>
+
+      <!-- Kitchen wide -->
+      <div class="granite-item granite-wide">
+        <img src="images/granite/RosyPink.webp" alt="Rosy Pink Granite Kitchen" loading="lazy"/>
+        <div class="granite-label">
+          <span class="granite-tag">Rosy Pink</span>
+          <span class="granite-sub">Kitchen countertop & flooring</span>
+        </div>
+      </div>
+
+      <!-- Living room -->
+      <div class="granite-item granite-wide">
+        <img src="images/granite/AmbajiWhite.webp" alt="Ambaji White Granite Living Room" loading="lazy"/>
+        <div class="granite-label">
+          <span class="granite-tag">Ambaji White</span>
+          <span class="granite-sub">Luxury open-plan living area flooring</span>
+        </div>
+      </div>
+
+      <!-- Dining -->
+      <div class="granite-item">
+        <img src="images/granite/NanoWhite.webp" alt="Nano White Granite Dining Table" loading="lazy"/>
+        <div class="granite-label">
+          <span class="granite-tag">Nano White</span>
+          <span class="granite-sub">Dining table top application</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Slab swatches row -->
+    <div class="text-center fade-in" style="margin-top:48px;">
+      <p class="section-label" style="margin-bottom:20px;">Available Varieties</p>
+    </div>
+    <div class="swatch-row fade-in">
+      <div class="swatch-card">
+        <img src="images/granite/blackpearl.webp" alt="Black Pearl"/>
+        <span>Black Pearl</span>
+      </div>
+      <div class="swatch-card">
+        <img src="images/granite/bluepearl.webp" alt="Blue Pearl"/>
+        <span>Blue Pearl</span>
+      </div>
+      <div class="swatch-card">
+        <img src="images/granite/devdagreen.webp" alt="Devda Green"/>
+        <span>Devda Green</span>
+      </div>
+      <div class="swatch-card">
+        <img src="images/granite/Honey-Brown-Granite.webp" alt="Honey Brown"/>
+        <span>Honey Brown</span>
+      </div>
+      <div class="swatch-card">
+        <img src="images/granite/Cheema-Pink-Granite.webp" alt="Cheema Pink"/>
+        <span>Cheema Pink</span>
+      </div>
+      <div class="swatch-card">
+        <img src="images/granite/steel-grey-granite-slab-500x500.webp" alt="Steel Grey"/>
+        <span>Steel Grey</span>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:40px;" class="fade-in">
+      <a href="#contact" class="btn-primary" style="display:inline-flex;">
+        <i class="fas fa-layer-group"></i> Enquire About Granite
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â• WHY US â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="why" id="why-us">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-left">
+        <p class="section-label fade-in">Why Aashiyana Decor</p>
+        <h2 class="section-title fade-in">Built on Quality.<br/>Backed by Trust.</h2>
+        <p class="section-sub fade-in" style="margin-bottom:32px;">For over two decades, we've been Jaipur's go-to destination for premium stones and tiles â€” because we never compromise on what matters most.</p>
+        <div class="why-points stagger">
+          <div class="why-point fade-in">
+            <div class="why-icon"><i class="fas fa-certificate"></i></div>
+            <div>
+              <div class="why-point-title">Premium Quality Materials</div>
+              <div class="why-point-text">Sourced from reputed vendors across India and globally. Every slab and tile passes strict quality gates before reaching you.</div>
+            </div>
+          </div>
+          <div class="why-point fade-in">
+            <div class="why-icon"><i class="fas fa-search"></i></div>
+            <div>
+              <div class="why-point-title">Stringent Quality Checks</div>
+              <div class="why-point-text">Dedicated quality managers oversee every batch â€” ensuring defect-free, durable, environment-friendly products.</div>
+            </div>
+          </div>
+          <div class="why-point fade-in">
+            <div class="why-icon"><i class="fas fa-truck"></i></div>
+            <div>
+              <div class="why-point-title">On-Time Delivery, PAN India</div>
+              <div class="why-point-text">Our logistics network ensures timely dispatch â€” whether you're in Jaipur or anywhere across India.</div>
+            </div>
+          </div>
+          <div class="why-point fade-in">
+            <div class="why-icon"><i class="fas fa-tag"></i></div>
+            <div>
+              <div class="why-point-title">Wholesale & Retail Pricing</div>
+              <div class="why-point-text">Competitive pricing for both homeowners and trade professionals. Best value, no compromise on quality.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-right fade-in">
+        <img src="images/granite/AmbajiWhite.webp" alt="Luxury marble interior" class="why-img-main" loading="lazy"/>
+        <div class="why-badge-box">
+          <div class="why-badge-num">2005</div>
+          <div class="why-badge-text">Established in Jaipur</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â• FEATURED PRODUCTS â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="products" id="products">
+  <div class="container">
+    <div class="text-center fade-in">
+      <p class="section-label">Our Bestsellers</p>
+      <h2 class="section-title">Featured Products</h2>
+      <p class="section-sub">Handpicked from our most popular lines â€” premium stones and tiles loved by homeowners, architects and contractors across Rajasthan.</p>
+    </div>
+    <div class="products-grid">
+
+      <div class="prod-card fade-in">
+        <div class="prod-img">
+          <img src="images/tiles/syncstone_tile_11.webp" alt="Tiles" loading="lazy"/>
+          <span class="prod-badge">Trending</span>
+        </div>
+        <div class="prod-body">
+          <div class="prod-cat">Tiles</div>
+          <div class="prod-name">Large Format Tiles</div>
+          <div class="prod-desc">High-durability tiles for floors and walls â€” available in matt, glossy and textured finishes. Ideal for homes and commercial spaces.</div>
+          <div class="prod-foot">
+            <div class="prod-price"><strong>Get Best Price</strong></div>
+            <button class="btn-enquire" onclick="scrollToContact()">Enquire Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card fade-in">
+        <div class="prod-img">
+          <img src="images/granite/GalaxyBlack.webp" alt="Granite" loading="lazy"/>
+          <span class="prod-badge">Bestseller</span>
+        </div>
+        <div class="prod-body">
+          <div class="prod-cat" style="color:var(--purple);font-size:0.75rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;">Granite</div>
+          <div class="prod-name">Decorative Granite</div>
+          <div class="prod-desc">Durable and elegant granite for flooring, countertops and construction. Available in a wide variety of colours and finishes.</div>
+          <div class="prod-foot">
+            <div class="prod-price"><strong>Get Best Price</strong></div>
+            <button class="btn-enquire" onclick="scrollToContact()">Enquire Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card fade-in">
+        <div class="prod-img">
+          <img src="images/tiles/syncstone_tile_03.webp" alt="Imported Marble" loading="lazy"/>
+          <span class="prod-badge">Premium</span>
+        </div>
+        <div class="prod-body">
+          <div class="prod-cat">Imported Marble</div>
+          <div class="prod-name">Italian Marble</div>
+          <div class="prod-desc">Premium imported Italian marble with elegant veining. Perfect for floors, walls and feature areas. Mirror-polished finish.</div>
+          <div class="prod-foot">
+            <div class="prod-price"><strong>Get Best Price</strong></div>
+            <button class="btn-enquire" onclick="scrollToContact()">Enquire Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card fade-in">
+        <div class="prod-img">
+          <img src="images/tiles/syncstone_tile_05.webp" alt="Imported Marble 2" loading="lazy"/>
+        </div>
+        <div class="prod-body">
+          <div class="prod-cat">Imported Marble</div>
+          <div class="prod-name">Spanish & Turkish Marble</div>
+          <div class="prod-desc">A curated selection of imported marble varieties with rich tones and dramatic veining. Adds timeless luxury to any interior.</div>
+          <div class="prod-foot">
+            <div class="prod-price"><strong>Get Best Price</strong></div>
+            <button class="btn-enquire" onclick="scrollToContact()">Enquire Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card fade-in">
+        <div class="prod-img">
+          <img src="images/tiles/bold60_tile_13.webp" alt="Natural Stone" loading="lazy"/>
+        </div>
+        <div class="prod-body">
+          <div class="prod-cat">Natural Stone</div>
+          <div class="prod-name">Sand Stone & Slate</div>
+          <div class="prod-desc">Earthy natural stone varieties for feature walls, flooring and landscaping. Authentic texture, durable and weather-resistant.</div>
+          <div class="prod-foot">
+            <div class="prod-price"><strong>Get Best Price</strong></div>
+            <button class="btn-enquire" onclick="scrollToContact()">Enquire Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card fade-in">
+        <div class="prod-img">
+          <img src="images/GoldRush.webp" alt="Quartz" loading="lazy"/>
+          <span class="prod-badge">New In</span>
+        </div>
+        <div class="prod-body">
+          <div class="prod-cat">Quartz</div>
+          <div class="prod-name">Engineered Quartz</div>
+          <div class="prod-desc">Scratch-resistant, non-porous engineered quartz for kitchen countertops, vanities and work surfaces. Consistent colour, zero maintenance.</div>
+          <div class="prod-foot">
+            <div class="prod-price"><strong>Get Best Price</strong></div>
+            <button class="btn-enquire" onclick="scrollToContact()">Enquire Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:40px;" class="fade-in">
+      <a href="#contact" class="btn-primary" style="display:inline-flex;">
+        <i class="fas fa-list"></i> View All Products & Get Quotes
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â• QUARTZ INSPIRATIONS â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="quartz-section" id="quartz">
+  <div class="container">
+    <div class="text-center fade-in">
+      <p class="section-label">Real Kitchens. Real Results.</p>
+      <h2 class="section-title">Quartz Inspirations</h2>
+      <p class="section-sub">See how our engineered quartz transforms kitchens â€” from modern minimalist to warm Indian classics. Zero maintenance. Lasting beauty.</p>
+    </div>
+    <div class="quartz-grid fade-in">
+      <div class="quartz-item quartz-tall">
+        <img src="images/IceStorm.webp" alt="IceStorm Quartz" loading="lazy"/>
+        <div class="quartz-label">
+          <span class="quartz-tag">IceStorm</span>
+          <span class="quartz-sub">Bold black kitchen with white quartz island</span>
+        </div>
+      </div>
+      <div class="quartz-item">
+        <img src="images/MorningMist.webp" alt="Morning Mist Quartz" loading="lazy"/>
+        <div class="quartz-label">
+          <span class="quartz-tag">Morning Mist</span>
+          <span class="quartz-sub">Bright modern kitchen, stone island</span>
+        </div>
+      </div>
+      <div class="quartz-item">
+        <img src="images/Venera.webp" alt="Venera Quartz" loading="lazy"/>
+        <div class="quartz-label">
+          <span class="quartz-tag">Venera</span>
+          <span class="quartz-sub">Warm Indian kitchen with tiled backsplash</span>
+        </div>
+      </div>
+      <div class="quartz-item">
+        <img src="images/GrayPearl.webp" alt="Gray Pearl Quartz" loading="lazy"/>
+        <div class="quartz-label">
+          <span class="quartz-tag">Gray Pearl</span>
+          <span class="quartz-sub">Earthy green cabinets, grey quartz top</span>
+        </div>
+      </div>
+      <div class="quartz-item quartz-wide">
+        <img src="images/GulmargPink.webp" alt="Gulmarg Pink Quartz" loading="lazy"/>
+        <div class="quartz-label">
+          <span class="quartz-tag">Gulmarg Pink</span>
+          <span class="quartz-sub">Navy blue contemporary kitchen with large island</span>
+        </div>
+      </div>
+      <div class="quartz-item">
+        <img src="images/GoldRush.webp" alt="Gold Rush Quartz" loading="lazy"/>
+        <div class="quartz-label">
+          <span class="quartz-tag">Gold Rush</span>
+          <span class="quartz-sub">All-white kitchen, gold fittings</span>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;" class="fade-in">
+      <a href="#contact" class="btn-primary" style="display:inline-flex;">
+        <i class="fas fa-cube"></i> Enquire About Quartz
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â• ABOUT â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="about-strip" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-imgs slide-left">
+        <img src="images/granite/AmbajiWhite.webp" alt="Showroom" class="about-img1" loading="lazy"/>
+        <img src="images/GoldRush.webp" alt="Products" class="about-img2" loading="lazy"/>
+      </div>
+      <div class="about-content slide-right">
+        <p class="section-label">Our Story</p>
+        <h2 class="section-title">Jaipur's Trusted Stone & Tile Partner Since 2005</h2>
+        <p class="section-sub" style="margin-bottom:20px;">Founded in 2005 in Mansarovar, Jaipur, Aashiyana Decor has grown into a leading wholesale supplier and importer of premium stones and tiles â€” serving thousands of homes and projects across India.</p>
+        <p style="font-size:0.9rem;color:var(--gray);line-height:1.8;margin-bottom:24px;font-style:italic;border-left:3px solid var(--purple);padding-left:16px;">"Customer satisfaction is our best motive â€” to deliver durable, defect-free, environment-friendly and beautifully designed products at affordable prices."</p>
+        <div class="about-facts">
+          <div class="fact">
+            <div class="fact-num">20+</div>
+            <div class="fact-label">Years in Business</div>
+          </div>
+          <div class="divider-v"></div>
+          <div class="fact">
+            <div class="fact-num">1500+</div>
+            <div class="fact-label">Happy Clients</div>
+          </div>
+          <div class="divider-v"></div>
+          <div class="fact">
+            <div class="fact-num">PAN</div>
+            <div class="fact-label">India Supply</div>
+          </div>
+        </div>
+        <a href="#contact" class="btn-primary" style="display:inline-flex;margin-top:12px;">
+          <i class="fas fa-handshake"></i> Work With Us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â• GALLERY â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="text-center fade-in">
+      <p class="section-label">Our Work</p>
+      <h2 class="section-title">Project Gallery</h2>
+      <p class="section-sub">Real spaces transformed with our materials â€” from marble floors to granite countertops and stone feature walls.</p>
+    </div>
+    <div class="gallery-grid fade-in">
+      <div class="gallery-item">
+        <img src="images/MorningMist.webp" alt="Quartz kitchen island" loading="lazy"/>
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/GulmargPink.webp" alt="Modern kitchen with quartz" loading="lazy"/>
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Venera.webp" alt="Indian kitchen with tiles" loading="lazy"/>
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/GrayPearl.webp" alt="Green kitchen with quartz" loading="lazy"/>
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/GoldRush.webp" alt="White quartz kitchen" loading="lazy"/>
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/IceStorm.webp" alt="Dark kitchen with quartz island" loading="lazy"/>
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â• TESTIMONIALS â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="testimonials">
+  <div class="container">
+    <div class="text-center fade-in">
+      <p class="section-label">What People Say</p>
+      <h2 class="section-title">Trusted by Homeowners,<br/>Designers & Architects</h2>
+    </div>
+    <div class="testi-carousel-wrap fade-in">
+      <div class="testi-track-outer">
+        <div class="testi-track" id="testiTrack">
+        <!-- Cards injected by JS -->
+        </div><!-- end testi-track -->
+      </div><!-- end testi-track-outer -->
+      <button class="testi-arrow testi-prev" id="testiPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+      <button class="testi-arrow testi-next" id="testiNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+    </div><!-- end carousel-wrap -->
+    <div class="testi-dots" id="testiDots"></div>
+    <div style="text-align:center;margin-top:28px;" class="fade-in">
+      <p style="color:rgba(255,255,255,0.3);font-size:0.82rem;">Rated <strong style="color:var(--purple-lt);">4.0â˜…</strong> on JustDial &nbsp;|&nbsp; <strong style="color:var(--purple-lt);">1500+</strong> Happy Clients &nbsp;|&nbsp; Trusted since 2005</p>
+    </div>
+  </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â• CTA BANNER â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<div class="cta-banner">
+  <div class="container">
+    <h2 class="fade-in">Planning a Renovation?</h2>
+    <p class="fade-in">Let's build your dream space together. Talk to our experts for a free consultation.</p>
+    <a href="#contact" class="btn-white fade-in"><i class="fas fa-comments"></i> Get a Free Consultation</a>
+    <div class="cta-contact-strip fade-in">
+      <a href="tel:+919314021950"><i class="fas fa-phone"></i> +91 93140 21950</a>
+      <a href="https://wa.me/919314021950" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+      <a href="#contact"><i class="fas fa-map-marker-alt"></i> Visit Our Showroom</a>
+    </div>
+  </div>
+</div>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â• CONTACT â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="text-center fade-in">
+      <p class="section-label">Get in Touch</p>
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-sub">Send us an enquiry or visit our showroom. We'll get back to you within 24 hours.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info fade-in">
+        <div>
+          <div class="contact-info-title">Visit Our Showroom</div>
+          <p style="font-size:0.88rem;color:var(--gray);margin-bottom:20px;">We're open 6 days a week. Walk in for a personalised consultation or call ahead to schedule a visit.</p>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div class="contact-detail-label">Address</div>
+            <div class="contact-detail-val">Plot No. 8, Opp. Metro Pillar No. 30,<br/>Gopalpura Bypass, Mansarovar,<br/>Jaipur â€“ 302020, Rajasthan</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <div class="contact-detail-label">Phone</div>
+            <div class="contact-detail-val"><a href="tel:+919314021950" style="color:var(--dark);">+91 93140 21950</a></div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <div class="contact-detail-label">WhatsApp</div>
+            <div class="contact-detail-val"><a href="https://wa.me/919314021950" target="_blank" style="color:var(--purple);">Chat with us on WhatsApp</a></div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <div class="contact-detail-label">Business Hours</div>
+            <div class="contact-detail-val">Monâ€“Sat: 9:00 AM â€“ 8:00 PM</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fas fa-receipt"></i></div>
+          <div>
+            <div class="contact-detail-label">GSTIN</div>
+            <div class="contact-detail-val">08ADGPG4545H1ZL</div>
+          </div>
+        </div>
+        <div style="border-radius:12px;overflow:hidden;box-shadow:var(--shadow);">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.0!2d75.7520!3d26.8680!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sGopalpura+Bypass+Mansarovar+Jaipur!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+            width="100%" height="200" style="border:0;display:block;" allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="contact-form fade-in">
+        <div class="form-title">Send an Enquiry</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">Your Name *</label>
+            <input type="text" id="fname" placeholder="e.g. Ravi Sharma" required/>
+          </div>
+          <div class="form-group">
+            <label for="fphone">Phone Number *</label>
+            <input type="tel" id="fphone" placeholder="+91 98765 43210" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="femail">Email Address</label>
+          <input type="email" id="femail" placeholder="you@example.com"/>
+        </div>
+        <div class="form-group">
+          <label for="fproduct">Product Interest</label>
+          <select id="fproduct">
+            <option value="">â€” Select a Category â€”</option>
+            <option>Tiles</option>
+            <option>Granite</option>
+            <option>Imported Marble</option>
+            <option>Natural Stone</option>
+            <option>Quartz</option>
+            <option>Other / Not Sure</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="fmsg">Your Message</label>
+          <textarea id="fmsg" placeholder="Tell us about your project, area size, quantity needed, or any questionsâ€¦"></textarea>
+        </div>
+        <button class="btn-submit" onclick="handleSubmit(event)">
+          <i class="fas fa-paper-plane"></i> Send Enquiry
+        </button>
+        <p style="text-align:center;font-size:0.78rem;color:var(--gray);margin-top:14px;">
+          <i class="fas fa-lock" style="color:var(--purple);"></i> Your details are safe with us. No spam, ever.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â• FOOTER â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<footer>
+  <div class="footer-main">
+    <div>
+      <img src="logo.svg" alt="Aashiyana Decor" class="logo-img-footer"/>
+      <p class="footer-desc">
+        Jaipur's trusted wholesale supplier of imported marble, granite, tiles, natural stone and quartz. Serving homeowners, contractors and architects since 2005.
+      </p>
+      <div class="footer-socials">
+        <a href="https://instagram.com/aashiyana_decor" target="_blank" class="social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/919314021950" target="_blank" class="social-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+919314021950" class="social-btn" title="Call Us"><i class="fas fa-phone"></i></a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+        <li><a href="#products"><i class="fas fa-chevron-right"></i> Products</a></li>
+        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+        <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+        <li><a href="#why-us"><i class="fas fa-chevron-right"></i> Why Us</a></li>
+        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Products</div>
+      <ul class="footer-links">
+        <li><a href="#products"><i class="fas fa-chevron-right"></i> Tiles</a></li>
+        <li><a href="#products"><i class="fas fa-chevron-right"></i> Granite</a></li>
+        <li><a href="#products"><i class="fas fa-chevron-right"></i> Imported Marble</a></li>
+        <li><a href="#products"><i class="fas fa-chevron-right"></i> Natural Stone</a></li>
+        <li><a href="#products"><i class="fas fa-chevron-right"></i> Quartz</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-links">
+        <li><a href="tel:+919314021950"><i class="fas fa-phone"></i> +91 93140 21950</a></li>
+        <li><a href="https://wa.me/919314021950" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a></li>
+        <li><a href="https://instagram.com/aashiyana_decor" target="_blank"><i class="fab fa-instagram"></i> @aashiyana_decor</a></li>
+        <li style="padding-top:8px;">
+          <a href="#contact" style="flex-direction:column;align-items:flex-start;gap:4px;">
+            <span style="display:flex;align-items:center;gap:6px;"><i class="fas fa-map-marker-alt"></i> Plot No. 8, Opp. Metro Pillar 30,</span>
+            <span style="padding-left:18px;">Gopalpura Bypass, Mansarovar,</span>
+            <span style="padding-left:18px;">Jaipur â€“ 302020</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>GST: 08ADGPG4545H1ZL &nbsp;|&nbsp; Â© 2005â€“2025 Aashiyana Decor. All rights reserved.</span>
+    <span class="footer-motto">"We make TRUST â€“ We win"</span>
+  </div>
+</footer>
+
+<!-- SUCCESS TOAST -->
+<div id="toast" style="
+  position:fixed;bottom:96px;right:28px;z-index:9999;
+  background:var(--dark);color:white;padding:14px 22px;border-radius:10px;
+  font-size:0.88rem;box-shadow:var(--shadow-lg);
+  transform:translateY(20px);opacity:0;
+  transition:all 0.4s ease;pointer-events:none;
+  display:flex;align-items:center;gap:10px;">
+  <i class="fas fa-check-circle" style="color:#6EE7B7;"></i>
+  <span>Enquiry sent! We'll contact you shortly.</span>
+</div>
+
+<script>
+  /* â”€â”€ Mobile nav â”€â”€ */
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => mobileNav.classList.toggle('open'));
+  mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileNav.classList.remove('open')));
+
+  /* â”€â”€ Scroll progress bar â”€â”€ */
+  const progressBar = document.getElementById('scrollProgress');
+  window.addEventListener('scroll', () => {
+    const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    if (progressBar) progressBar.style.width = pct + '%';
+  }, { passive: true });
+
+  /* â”€â”€ Active nav â”€â”€ */
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('nav a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => { if (window.scrollY >= sec.offsetTop - 130) current = sec.id; });
+    navLinks.forEach(a => {
+      a.classList.remove('active');
+      if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+    });
+  }, { passive: true });
+
+  /* â”€â”€ Universal IntersectionObserver â”€â”€ */
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      el.classList.add('visible');
+      // Animate section-label underline
+      el.querySelectorAll && el.querySelectorAll('.section-label').forEach(l => l.classList.add('visible'));
+      io.unobserve(el);
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in, .slide-left, .slide-right, .stagger').forEach(el => io.observe(el));
+  document.querySelectorAll('.section-label').forEach(el => io.observe(el));
+
+  /* â”€â”€ Stat ticker â”€â”€ */
+  function animateCounter(el) {
+    const target = parseInt(el.dataset.target);
+    const suffix = el.dataset.suffix || '';
+    const steps = 70; const duration = 2000;
+    let current = 0;
+    const timer = setInterval(() => {
+      current += target / steps;
+      if (current >= target) { current = target; clearInterval(timer); }
+      el.textContent = Math.floor(current) + suffix;
+    }, duration / steps);
+  }
+  const statObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.stat-num[data-target]').forEach(animateCounter);
+        statObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  const statsBar = document.querySelector('.stats-bar');
+  if (statsBar) statObs.observe(statsBar);
+
+  /* â•â• TESTIMONIALS CAROUSEL â•â• */
+  const reviews = [
+    { text: "We renovated our entire home with Italian marble from Aashiyana Decor. The quality is exceptional and the team was very helpful throughout. Highly recommend!", name: "Rajesh Kumar", loc: "Mansarovar, Jaipur", init: "RK", stars: 5 },
+    { text: "Best place to source tiles and granite in Jaipur. Stunning collection, very competitive pricing, and delivery was right on time. Will definitely come back.", name: "Priya Sharma", loc: "Gopalpura, Jaipur", init: "PS", stars: 4 },
+    { text: "As a contractor, I've been sourcing granite, marble and quartz from Aashiyana for years. Consistent quality, wholesale pricing, and a team that truly understands the trade.", name: "Amit Meena", loc: "Contractor, Jaipur", init: "AM", stars: 5 },
+    { text: "Humne apne naye ghar ke liye yahan se Syncstone tiles liye â€” bilkul waise hi aaye jaise showroom mein dikhaye. Bahut hi sundar finish aur staff bhi bahut cooperative tha!", name: "Sunita Verma", loc: "Vaishali Nagar, Jaipur", init: "SV", stars: 5 },
+    { text: "Got the leather-finish tiles for my office lobby â€” the response from visitors has been incredible. Everyone asks where we sourced them. Great product, great service.", name: "Vivek Joshi", loc: "C-Scheme, Jaipur", init: "VJ", stars: 4 },
+    { text: "Imported marble ki quality dekh ke dil khush ho gaya. Bahut saare options the, price bhi reasonable tha. Aashiyana Decor se better option Jaipur mein milna mushkil hai.", name: "Neeraj Khandelwal", loc: "Pratap Nagar, Jaipur", init: "NK", stars: 5 },
+    { text: "We were building our dream villa and needed premium natural stone. Aashiyana had the most diverse range we'd seen in Rajasthan. Delivered on time, zero breakage. Absolutely satisfied.", name: "Dr. Deepika Rathore", loc: "Jagatpura, Jaipur", init: "DR", stars: 5 },
+    { text: "Kitchen ke liye quartz countertop liya â€” finish ekdum smooth aur cleaning bahut aasaan hai. Ghar waale bhi bahut impressed hain. Mandot ji ne personally help ki, bohot achha experience raha.", name: "Meena Gupta", loc: "Tonk Road, Jaipur", init: "MG", stars: 4 },
+    { text: "Running a hotel project in Jaipur and needed bulk granite at wholesale rates. Aashiyana gave us the best deal in the city with no compromise on quality. Our go-to vendor from now on.", name: "Harish Singhania", loc: "Hotel Developer, Jaipur", init: "HS", stars: 5 },
+    { text: "Aashiyana Decor is my first call for every residential project. Their Syncstone range is unmatched in Jaipur â€” the finishes photograph beautifully and clients are always thrilled. Reliable, consistent, and genuinely invested in quality.", name: "Tanya Rajput", loc: "Principal Designer, Studio Tanya", init: "TR", stars: 5, badge: "Interior Designer", icon: "fa-drafting-compass" },
+    { text: "I've specified Aashiyana's imported marble and natural stone across six residential and two commercial projects this year. Lead times are predictable, specs match what's on paper, and wholesale pricing makes my budgets work. That's rare.", name: "Karan Mathur", loc: "Principal Architect, KM Architects", init: "KM", stars: 5, badge: "Architect", icon: "fa-ruler-combined" },
+    { text: "Maine apne last 12 projects mein Aashiyana ka leather-finish tile aur quartz dono use kiya hai. Clients ka response humesha excellent hota hai. Aur Mandot ji ki team kabhi bhi late delivery nahi karti â€” jo is industry mein bohot badi baat hai.", name: "Shruti Pareek", loc: "Interior Designer, Mansarovar", init: "SP", stars: 4, badge: "Interior Designer", icon: "fa-pencil-ruler" },
+    { text: "When a client asks for premium stone at a sensible budget, Aashiyana Decor solves that problem instantly. The variety is extraordinary â€” from Calacatta marble to Black Galaxy granite â€” all available under one roof. A trusted partner for my practice.", name: "Rohit Bhardwaj", loc: "Design Architect, RB Studio", init: "RB", stars: 5, badge: "Architect", icon: "fa-building" },
+    { text: "The Syncstone marble-look tiles saved one of my projects â€” the client wanted real marble but couldn't stretch the budget. Aashiyana's team helped us pick the perfect alternative. End result was stunning and the client couldn't tell the difference.", name: "Neha Agarwal", loc: "Founder, Neha A. Interiors", init: "NA", stars: 5, badge: "Interior Designer", icon: "fa-drafting-compass" },
+  ];
+
+  function starHTML(n) {
+    return Array.from({length:5}, (_,i) =>
+      `<i class="fa${i < n ? 's' : 'r'} fa-star"></i>`).join('');
+  }
+
+  const track = document.getElementById('testiTrack');
+  const dotsWrap = document.getElementById('testiDots');
+
+  reviews.forEach(r => {
+    const card = document.createElement('div');
+    card.className = 'testi-card' + (r.badge ? ' testi-pro' : '');
+    card.innerHTML = `
+      ${r.badge ? `<div class="testi-pro-badge"><i class="fas ${r.icon}"></i> ${r.badge}</div>` : ''}
+      <div class="testi-stars">${starHTML(r.stars)}</div>
+      <p class="testi-text">"${r.text}"</p>
+      <div class="testi-author">
+        <div class="testi-avatar">${r.init}</div>
+        <div>
+          <div class="testi-name">${r.name}</div>
+          <div class="testi-loc">${r.loc}</div>
+        </div>
+      </div>`;
+    track.appendChild(card);
+  });
+
+  let perView = window.innerWidth <= 580 ? 1 : window.innerWidth <= 900 ? 2 : 3;
+  let currentIdx = 0;
+  const totalSlides = reviews.length;
+  const maxIdx = totalSlides - perView;
+
+  // Create dots
+  const numDots = Math.ceil(totalSlides / perView);
+  for (let i = 0; i < numDots; i++) {
+    const dot = document.createElement('button');
+    dot.className = 'testi-dot' + (i === 0 ? ' active' : '');
+    dot.addEventListener('click', () => goTo(i * perView));
+    dotsWrap.appendChild(dot);
+  }
+
+  function getCardWidth() {
+    const cards = track.querySelectorAll('.testi-card');
+    if (!cards.length) return 0;
+    return cards[0].offsetWidth + 24; // gap
+  }
+
+  function goTo(idx) {
+    currentIdx = Math.max(0, Math.min(idx, maxIdx));
+    track.style.transform = `translateX(-${currentIdx * getCardWidth()}px)`;
+    dotsWrap.querySelectorAll('.testi-dot').forEach((d, i) => {
+      d.classList.toggle('active', Math.floor(currentIdx / perView) === i);
+    });
+  }
+
+  document.getElementById('testiPrev').addEventListener('click', () => goTo(currentIdx - perView));
+  document.getElementById('testiNext').addEventListener('click', () => goTo(currentIdx + perView));
+
+  // Auto-advance
+  let autoTimer = setInterval(() => goTo(currentIdx + perView > maxIdx ? 0 : currentIdx + perView), 5000);
+  const carouselWrap = document.querySelector('.testi-carousel-wrap');
+  carouselWrap.addEventListener('mouseenter', () => clearInterval(autoTimer));
+  carouselWrap.addEventListener('mouseleave', () => {
+    autoTimer = setInterval(() => goTo(currentIdx + perView > maxIdx ? 0 : currentIdx + perView), 5000);
+  });
+
+  // Touch swipe
+  let touchStartX = 0;
+  track.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) diff > 0 ? goTo(currentIdx + perView) : goTo(currentIdx - perView);
+  });
+
+  window.addEventListener('resize', () => {
+    perView = window.innerWidth <= 580 ? 1 : window.innerWidth <= 900 ? 2 : 3;
+    goTo(0);
+  });
+
+  /* â”€â”€ Tile filter â”€â”€ */
+  function filterTiles(cat, btn) {
+    document.querySelectorAll('.tile-tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.tile-item').forEach(item => {
+      item.classList.toggle('hidden', cat !== 'all' && item.dataset.cat !== cat);
+    });
+  }
+
+  /* â”€â”€ Scroll to contact â”€â”€ */
+  function scrollToContact() {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  /* â”€â”€ Form submit â”€â”€ */
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (!document.getElementById('fname').value.trim() || !document.getElementById('fphone').value.trim()) {
+      alert('Please fill in your name and phone number.'); return;
+    }
+    const toast = document.getElementById('toast');
+    toast.style.opacity = '1'; toast.style.transform = 'translateY(0)';
+    setTimeout(() => { toast.style.opacity = '0'; toast.style.transform = 'translateY(20px)'; }, 3500);
+    ['fname','fphone','femail','fproduct','fmsg'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el.tagName === 'SELECT') el.selectedIndex = 0; else el.value = '';
+    });
+  }
+</script>
+</body>
+</html>
+
