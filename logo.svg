@@ -6,7 +6,7 @@
     </linearGradient>
   </defs>
 
-  <!-- Purple background — full viewBox, rounded corners -->
+  <!-- Purple background - full viewBox, rounded corners -->
   <rect width="360" height="80" rx="6" ry="6" fill="url(#purpleGrad)"/>
 
   <!-- Subtle inner border line -->

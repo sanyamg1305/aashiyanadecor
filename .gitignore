@@ -1,12 +1,18 @@
-# Dev scripts (not needed in deployment)
-compress_images.py
-extract_tiles.py
+# Development & scratch files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
 
-# OS files
+# OS & system files
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Editor
+# IDE & Editor files
 .vscode/
+.idea/
 *.swp
+*.swo
+*~

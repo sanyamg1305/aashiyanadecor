@@ -1,0 +1,24 @@
+{
+  "name": "Aashiyana Decor - Tiles, Granite & Marble Jaipur",
+  "short_name": "Aashiyana Decor",
+  "description": "Jaipur's trusted supplier of premium tiles, granite, imported Italian marble & Specta Quartz since 2005.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#111113",
+  "icons": [
+    {
+      "src": "/aashlogo.jpg",
+      "sizes": "188x67",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.svg",
+      "sizes": "360x80",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
+
