@@ -4,6 +4,7 @@ __pycache__/
 *.pyo
 *.pyd
 *.log
+scratch/
 
 # OS & system files
 .DS_Store
