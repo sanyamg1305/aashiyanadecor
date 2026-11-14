@@ -2,6 +2,21 @@
    AASHIYANA DECOR - SHARED SCRIPT
    ========================================================================== */
 document.addEventListener('DOMContentLoaded', () => {
+
+  /* --- Clean Smooth Scroll for In-Page Anchors (prevents URL hash pollution) --- */
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId && targetId !== '#' && targetId.length > 1) {
+        const targetEl = document.querySelector(targetId);
+        if (targetEl) {
+          e.preventDefault();
+          targetEl.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  });
+
   /* --- Mobile Navigation --- */
   const hamburger = document.getElementById('hamburger');
   const mobileNav = document.getElementById('mobileNav');
