@@ -231,4 +231,52 @@
     </image:image>
   </url>
 
+  <!-- Commercial Guide: Italian Marble Price in Jaipur -->
+  <url>
+    <loc>https://aashiyanadecor.in/italian-marble-price-jaipur.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://aashiyanadecor.in/images/tiles/syncstone_tile_03.webp</image:loc>
+      <image:title>Italian Marble Price in Jaipur - Statuario &amp; Calacatta Slabs</image:title>
+    </image:image>
+  </url>
+
+  <!-- Commercial Guide: Specta Quartz Dealer Jaipur -->
+  <url>
+    <loc>https://aashiyanadecor.in/specta-quartz-jaipur.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://aashiyanadecor.in/images/GoldRush.webp</image:loc>
+      <image:title>Authorized Specta Quartz Dealer Jaipur - Kitchen Countertops</image:title>
+    </image:image>
+  </url>
+
+  <!-- Commercial Guide: Rajasthan Granite Price in Jaipur -->
+  <url>
+    <loc>https://aashiyanadecor.in/granite-price-jaipur.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
+      <image:title>Rajasthan Gangsaw Granite Price List in Jaipur - Black Galaxy</image:title>
+    </image:image>
+  </url>
+
+  <!-- Commercial Guide: Best Tile Store in Jaipur -->
+  <url>
+    <loc>https://aashiyanadecor.in/tile-store-jaipur.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://aashiyanadecor.in/images/tiles/leather120_tile_08.webp</image:loc>
+      <image:title>Best Tile Store in Jaipur - Vitrified &amp; Bathroom Tiles</image:title>
+    </image:image>
+  </url>
+
 </urlset>
