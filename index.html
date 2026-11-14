@@ -181,7 +181,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link rel="stylesheet" href="css/style.css?v=2.2"/>
+  <link rel="stylesheet" href="css/style.css?v=3.0"/>
 </head>
 <body>
 
@@ -201,8 +201,8 @@
 
 <!-- TOPBAR -->
 <div class="atelier-topbar">
-  <span>Mansarovar, Jaipur &middot; Opp. Metro Pillar No. 30, Gopalpura Bypass</span>
-  <span>Authorized Specta Quartz &middot; Direct Rajasthan Granite &middot; Imported Marble</span>
+  <span>Jaipur Stone Atelier &middot; Estd. 2005</span>
+  <span>Authorized Specta Quartz &middot; Rajasthan Gangsaw Granite &middot; Italian Marble</span>
   <span><a href="tel:+919468634597">+91 94686 34597</a></span>
 </div>
 
@@ -215,14 +215,14 @@
       <a href="#about" class="atelier-nav-link">About</a>
     </nav>
 
-    <a href="index.html" class="atelier-brand-center" title="Aashiyana Stone - Jaipur">
-      <span class="atelier-brand-logo">Aashiyana &middot; Stone</span>
-      <span class="atelier-brand-sub">Atelier Jaipur &middot; Estd. 2005</span>
+    <a href="index.html" class="atelier-brand-center" title="Aashiyana Decor - Jaipur">
+      <span class="atelier-brand-logo">Aashiyana Decor</span>
+      <span class="atelier-brand-sub">Jaipur &middot; Estd. 2005</span>
     </a>
 
     <div class="atelier-nav-right">
       <a href="#catalog" class="atelier-nav-link">Search</a>
-      <a href="contact.html" class="atelier-nav-link">Showroom (Jaipur)</a>
+      <a href="#services" class="atelier-nav-link">Services</a>
       <a href="https://wa.me/919468634597?text=Hi%20Aashiyana%20Decor%2C%20I%20am%20looking%20for%20a%20stone%20or%20tile%20quote." target="_blank" class="atelier-nav-link" style="color: var(--stone-gold);">Enquire &rarr;</a>
     </div>
 
@@ -379,297 +379,323 @@
   </div>
 </section>
 
-<!-- ═══ 6. INTERACTIVE MATERIAL CATALOG ═══ -->
+<!-- ═══ 6. ARCHITECTURAL STONE & SURFACE LIBRARY ═══ -->
 <section class="atelier-section" id="catalog">
-  <div class="atelier-section-header">
-    <h2 class="atelier-section-title">Architectural Catalog</h2>
-    <div class="tiles-counter" id="tileCount" style="font-family: var(--font-roman); font-size: 0.76rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--stone-text-muted);">Displaying all 26 materials</div>
+  <div class="atelier-catalog-header">
+    <span class="atelier-catalog-kicker">Curated Material Library</span>
+    <h2 class="atelier-catalog-title">Architectural Stones &amp; Surfaces</h2>
+    <p class="atelier-catalog-desc">
+      Explore our quarry-calibrated portfolio of imported Italian marble, Rajasthan gangsaw granite, authorized Specta Quartz slabs, and high-performance architectural vitrified surfaces.
+    </p>
   </div>
 
-  <div class="tiles-controls" style="margin-bottom: 36px;">
-    <div class="tiles-tabs" style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px;">
-      <button class="tile-filter-btn active" data-filter="all" style="font-family: var(--font-roman); letter-spacing: 0.12em; font-size: 0.78rem;">All Slabs (26)</button>
-      <button class="tile-filter-btn" data-filter="bold60" style="font-family: var(--font-roman); letter-spacing: 0.12em; font-size: 0.78rem;">Bold 60 &times; 60</button>
-      <button class="tile-filter-btn" data-filter="leather120" style="font-family: var(--font-roman); letter-spacing: 0.12em; font-size: 0.78rem;">Leather 60 &times; 120</button>
-      <button class="tile-filter-btn" data-filter="syncstone" style="font-family: var(--font-roman); letter-spacing: 0.12em; font-size: 0.78rem;">Syncstone Marble</button>
-      <button class="tile-filter-btn" data-filter="bathroom" style="font-family: var(--font-roman); letter-spacing: 0.12em; font-size: 0.78rem;">Bathroom Anti-Skid</button>
+  <div class="atelier-filter-bar">
+    <button class="tile-filter-btn active" data-filter="all">All Materials (24)</button>
+    <button class="tile-filter-btn" data-filter="marble">Italian Marble</button>
+    <button class="tile-filter-btn" data-filter="granite">Rajasthan Granite</button>
+    <button class="tile-filter-btn" data-filter="quartz">Specta Quartz</button>
+    <button class="tile-filter-btn" data-filter="vitrified">Vitrified Stone</button>
+  </div>
+
+  <div class="atelier-search-row">
+    <i class="fas fa-search atelier-search-icon"></i>
+    <input type="text" id="tileSearch" class="atelier-search-input" placeholder="Search by stone name, quarry origin, or finish..." aria-label="Search material library"/>
+  </div>
+
+  <div class="atelier-library-grid" id="tilesGrid">
+    <!-- MARBLE 1 -->
+    <div class="tile-card atelier-card" data-cat="marble" data-name="Statuario Extra Bookmatch" data-sub="Imported Italian Carrara Marble" data-src="images/tiles/syncstone_tile_03.webp">
+      <div class="atelier-card-media">
+        <img src="images/tiles/syncstone_tile_03.webp" alt="Statuario Extra Bookmatch Italian Marble" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Statuario Extra</h3>
+        <p class="atelier-card-sub">Italian Bookmatched Marble</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
     </div>
-    <div class="tiles-search-wrap">
-      <i class="fas fa-search tiles-search-icon"></i>
-      <input type="text" id="tileSearch" class="tiles-search-input" placeholder="Search by stone name, finish or size..." style="background: var(--stone-plaster); border-color: var(--stone-border);"/>
+
+    <!-- MARBLE 2 -->
+    <div class="tile-card atelier-card" data-cat="marble" data-name="Calacatta Gold Italian" data-sub="Warm Alabaster &amp; Golden Veining" data-src="images/tiles/syncstone_tile_05.webp">
+      <div class="atelier-card-media">
+        <img src="images/tiles/syncstone_tile_05.webp" alt="Calacatta Gold Italian Marble" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Calacatta Gold</h3>
+        <p class="atelier-card-sub">Imported Warm Alabaster Veining</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- MARBLE 3 -->
+    <div class="tile-card atelier-card" data-cat="marble" data-name="Botticino Classico" data-sub="Beige Architectural Italian Stone" data-src="images/tiles/syncstone_tile_02.webp">
+      <div class="atelier-card-media">
+        <img src="images/tiles/syncstone_tile_02.webp" alt="Botticino Classico Italian Marble" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Botticino Classico</h3>
+        <p class="atelier-card-sub">Classic Italian Polished Limestone</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- MARBLE 4 -->
+    <div class="tile-card atelier-card" data-cat="marble" data-name="Roman Travertine" data-sub="Textured Architectural Veincut Stone" data-src="images/tiles/syncstone_tile_04.webp">
+      <div class="atelier-card-media">
+        <img src="images/tiles/syncstone_tile_04.webp" alt="Roman Travertine Natural Stone" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Roman Travertine</h3>
+        <p class="atelier-card-sub">Veincut Earth Plaster Aesthetic</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- MARBLE 5 -->
+    <div class="tile-card atelier-card" data-cat="marble" data-name="Onyx Alabaster" data-sub="Translucent Gemstone Slabs" data-src="images/tiles/syncstone_tile_07.webp">
+      <div class="atelier-card-media">
+        <img src="images/tiles/syncstone_tile_07.webp" alt="Onyx Alabaster Translucent Stone" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Onyx Alabaster</h3>
+        <p class="atelier-card-sub">Backlit Feature Vanity &amp; Bar</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- MARBLE 6 -->
+    <div class="tile-card atelier-card" data-cat="marble" data-name="Armani Silk Grey" data-sub="Deep Contemporary Charcoal Marble" data-src="images/tiles/syncstone_tile_08.webp">
+      <div class="atelier-card-media">
+        <img src="images/tiles/syncstone_tile_08.webp" alt="Armani Silk Grey Italian Marble" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Armani Grey</h3>
+        <p class="atelier-card-sub">Honed Minimalist Italian Marble</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- GRANITE 1 -->
+    <div class="tile-card atelier-card" data-cat="granite" data-name="Black Galaxy Granite" data-sub="Rajasthan Gangsaw Primary Lot" data-src="images/granite/GalaxyBlack.webp">
+      <div class="atelier-card-media">
+        <img src="images/granite/GalaxyBlack.webp" alt="Black Galaxy Granite Slabs" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Black Galaxy</h3>
+        <p class="atelier-card-sub">Golden Bronzite Specks &middot; Gangsaw Slabs</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- GRANITE 2 -->
+    <div class="tile-card atelier-card" data-cat="granite" data-name="Rajasthan R Black" data-sub="Dense Jet Black Primary Quarry" data-src="images/granite/RajasthanBlack.webp">
+      <div class="atelier-card-media">
+        <img src="images/granite/RajasthanBlack.webp" alt="Rajasthan R Black Granite" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Rajasthan R Black</h3>
+        <p class="atelier-card-sub">High-Density Pure Black Granite</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- GRANITE 3 -->
+    <div class="tile-card atelier-card" data-cat="granite" data-name="Steel Grey Granite" data-sub="Flamed &amp; Polished Architectural" data-src="images/granite/steel-grey-granite-slab-500x500.webp">
+      <div class="atelier-card-media">
+        <img src="images/granite/steel-grey-granite-slab-500x500.webp" alt="Steel Grey Granite Slab" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Steel Grey</h3>
+        <p class="atelier-card-sub">Architectural Flooring &amp; Staircases</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- GRANITE 4 -->
+    <div class="tile-card atelier-card" data-cat="granite" data-name="Ambaji White Marble Granite" data-sub="Pure White Crystalline Natural Stone" data-src="images/granite/AmbajiWhite.webp">
+      <div class="atelier-card-media">
+        <img src="images/granite/AmbajiWhite.webp" alt="Ambaji White Natural Stone" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Ambaji White</h3>
+        <p class="atelier-card-sub">Crystalline Temple &amp; Villa Stone</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- GRANITE 5 -->
+    <div class="tile-card atelier-card" data-cat="granite" data-name="Rosy Pink Gangsaw Granite" data-sub="Rajasthan Quarry Direct Wholesale" data-src="images/granite/RosyPink.webp">
+      <div class="atelier-card-media">
+        <img src="images/granite/RosyPink.webp" alt="Rosy Pink Rajasthan Granite" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Rosy Pink</h3>
+        <p class="atelier-card-sub">Commercial Facades &amp; Large Patios</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- GRANITE 6 -->
+    <div class="tile-card atelier-card" data-cat="granite" data-name="Devda Green Granite" data-sub="Rich Forest Green Textured Granite" data-src="images/granite/devdagreen.webp">
+      <div class="atelier-card-media">
+        <img src="images/granite/devdagreen.webp" alt="Devda Green Rajasthan Granite" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Devda Green</h3>
+        <p class="atelier-card-sub">Serpentine Forest Green Surface</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- QUARTZ 1 -->
+    <div class="tile-card atelier-card" data-cat="quartz" data-name="Specta Gold Rush Quartz" data-sub="Golden Veined Non-Porous Surface" data-src="images/GoldRush.webp">
+      <div class="atelier-card-media">
+        <img src="images/GoldRush.webp" alt="Specta Gold Rush Quartz" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Gold Rush Quartz</h3>
+        <p class="atelier-card-sub">Authorized Specta Dealer &middot; Kitchen Platform</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- QUARTZ 2 -->
+    <div class="tile-card atelier-card" data-cat="quartz" data-name="Specta Ice Storm Quartz" data-sub="Zero-Stain Turmeric Resistant Platform" data-src="images/IceStorm.webp">
+      <div class="atelier-card-media">
+        <img src="images/IceStorm.webp" alt="Specta Ice Storm Quartz" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Ice Storm Quartz</h3>
+        <p class="atelier-card-sub">Zero-Stain Island Countertops</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- QUARTZ 3 -->
+    <div class="tile-card atelier-card" data-cat="quartz" data-name="Specta Venera Calacatta" data-sub="Bold Grey Dramatic Veined Quartz" data-src="images/Venera.webp">
+      <div class="atelier-card-media">
+        <img src="images/Venera.webp" alt="Specta Venera Quartz" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Specta Venera</h3>
+        <p class="atelier-card-sub">Calacatta Bookmatch Kitchen Slab</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- QUARTZ 4 -->
+    <div class="tile-card atelier-card" data-cat="quartz" data-name="Specta Gray Pearl Quartz" data-sub="Soft Taupe Warm Grey Countertop" data-src="images/GrayPearl.webp">
+      <div class="atelier-card-media">
+        <img src="images/GrayPearl.webp" alt="Specta Gray Pearl Quartz" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Gray Pearl Quartz</h3>
+        <p class="atelier-card-sub">Minimalist Contemporary Vanity Slab</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- QUARTZ 5 -->
+    <div class="tile-card atelier-card" data-cat="quartz" data-name="Specta Gulmarg Pink Quartz" data-sub="Ethereal Rose Tone Quartz Countertop" data-src="images/GulmargPink.webp">
+      <div class="atelier-card-media">
+        <img src="images/GulmargPink.webp" alt="Specta Gulmarg Pink Quartz" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Gulmarg Pink</h3>
+        <p class="atelier-card-sub">Bespoke Boutique Vanity Countertop</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- QUARTZ 6 -->
+    <div class="tile-card atelier-card" data-cat="quartz" data-name="Specta Morning Mist Quartz" data-sub="Pure Alabaster Feathered Veining" data-src="images/MorningMist.webp">
+      <div class="atelier-card-media">
+        <img src="images/MorningMist.webp" alt="Specta Morning Mist Quartz" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Morning Mist</h3>
+        <p class="atelier-card-sub">Gentle Cloud Pattern Quartz</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- VITRIFIED 1 -->
+    <div class="tile-card atelier-card" data-cat="vitrified" data-name="Leather 60x120 Basalt Grey" data-sub="Tactile Anti-Skid Bathroom &amp; Living" data-src="images/tiles/leather120_tile_08.webp">
+      <div class="atelier-card-media">
+        <img src="images/tiles/leather120_tile_08.webp" alt="Leather 60x120 Basalt Grey Tile" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Leather Basalt Grey</h3>
+        <p class="atelier-card-sub">600 &times; 1200 mm &middot; Tactile Bathroom Anti-Skid</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- VITRIFIED 2 -->
+    <div class="tile-card atelier-card" data-cat="vitrified" data-name="Leather 60x120 Ash Grey" data-sub="Honed Matte Textured Architecture" data-src="images/tiles/leather120_tile_02.webp">
+      <div class="atelier-card-media">
+        <img src="images/tiles/leather120_tile_02.webp" alt="Leather 60x120 Ash Grey Tile" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Leather Ash Grey</h3>
+        <p class="atelier-card-sub">600 &times; 1200 mm &middot; Full Body Vitrified Slab</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- VITRIFIED 3 -->
+    <div class="tile-card atelier-card" data-cat="vitrified" data-name="Leather 60x120 Tactile Dark" data-sub="High-Grip Wet Room &amp; Shower Slab" data-src="images/tiles/leather120_tile_06.webp">
+      <div class="atelier-card-media">
+        <img src="images/tiles/leather120_tile_06.webp" alt="Tactile 60x120 Dark Tile" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Tactile Dark Basalt</h3>
+        <p class="atelier-card-sub">600 &times; 1200 mm &middot; Anti-Slip Shower Surface</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- VITRIFIED 4 -->
+    <div class="tile-card atelier-card" data-cat="vitrified" data-name="Bold 60x60 Taupe" data-sub="Warm Earth Architectural Porcelain" data-src="images/tiles/bold60_tile_01.webp">
+      <div class="atelier-card-media">
+        <img src="images/tiles/bold60_tile_01.webp" alt="Bold 60x60 Taupe Porcelain" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Bold Taupe</h3>
+        <p class="atelier-card-sub">600 &times; 600 mm &middot; Warm Earth Floor Porcelain</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- VITRIFIED 5 -->
+    <div class="tile-card atelier-card" data-cat="vitrified" data-name="Bold 60x60 Charcoal Brown" data-sub="Deep Tone Non-Slip Outdoor &amp; Living" data-src="images/tiles/bold60_tile_04.webp">
+      <div class="atelier-card-media">
+        <img src="images/tiles/bold60_tile_04.webp" alt="Bold 60x60 Charcoal Brown" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Bold Charcoal Brown</h3>
+        <p class="atelier-card-sub">600 &times; 600 mm &middot; Matte Heavy-Duty Floor</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
+    </div>
+
+    <!-- VITRIFIED 6 -->
+    <div class="tile-card atelier-card" data-cat="vitrified" data-name="Bold 60x60 Sandy Brown" data-sub="Textured Natural Earth Architectural" data-src="images/tiles/bold60_tile_11.webp">
+      <div class="atelier-card-media">
+        <img src="images/tiles/bold60_tile_11.webp" alt="Bold 60x60 Sandy Brown" loading="lazy" width="600" height="750"/>
+      </div>
+      <div class="atelier-card-body">
+        <h3 class="atelier-card-title">Bold Sandy Brown</h3>
+        <p class="atelier-card-sub">600 &times; 600 mm &middot; Architectural Sandstone Look</p>
+        <span class="atelier-card-action">Inspect Slab &rarr;</span>
+      </div>
     </div>
   </div>
 
-  <div class="tiles-grid" id="tilesGrid">
-      <!-- Bold 60 -->
-      <div class="tile-card" data-cat="bold60" data-name="Bold 60×60 Taupe" data-sub="Matte finish full-body tile" data-src="images/tiles/bold60_tile_01.webp">
-        <img src="images/tiles/bold60_tile_01.webp" alt="Bold 60x60 Taupe Tile" loading="lazy"/>
-        <span class="tile-badge">600 × 600 mm</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Bold 60 × 60 · Taupe</div>
-          <div class="tile-subtitle">Matte finish full-body tile</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card" data-cat="bold60" data-name="Bold 60×60 Charcoal Brown" data-sub="Deep textured non-slip floor" data-src="images/tiles/bold60_tile_04.webp">
-        <img src="images/tiles/bold60_tile_04.webp" alt="Bold 60x60 Charcoal Brown" loading="lazy"/>
-        <span class="tile-badge">600 × 600 mm</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Bold 60 × 60 · Charcoal Brown</div>
-          <div class="tile-subtitle">Deep textured non-slip floor</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card" data-cat="bold60" data-name="Bold 60×60 Sandy Brown" data-sub="Earthy warm architectural tone" data-src="images/tiles/bold60_tile_11.webp">
-        <img src="images/tiles/bold60_tile_11.webp" alt="Bold 60x60 Sandy Brown" loading="lazy"/>
-        <span class="tile-badge">600 × 600 mm</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Bold 60 × 60 · Sandy Brown</div>
-          <div class="tile-subtitle">Earthy warm architectural tone</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card tile-wide" data-cat="bold60" data-name="Bold 60×60 Patio Application" data-sub="Heavy-duty outdoor vitrified floor" data-src="images/tiles/bold60_tile_12.webp">
-        <img src="images/tiles/bold60_tile_12.webp" alt="Outdoor Patio Application" loading="lazy"/>
-        <span class="tile-badge">Application</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Bold 60 × 60 · Outdoor Patio</div>
-          <div class="tile-subtitle">Heavy-duty outdoor vitrified floor</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card tile-wide" data-cat="bold60" data-name="Bold 60×60 Driveway Application" data-sub="Commercial grade vehicle resistant tile" data-src="images/tiles/bold60_tile_13.webp">
-        <img src="images/tiles/bold60_tile_13.webp" alt="Driveway Application" loading="lazy"/>
-        <span class="tile-badge">Application</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Bold 60 × 60 · Driveway Application</div>
-          <div class="tile-subtitle">Commercial grade vehicle resistant tile</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <!-- Leather 120 -->
-      <div class="tile-card" data-cat="leather120" data-name="Leather 60×120 Warm Brown" data-sub="Soft tactile leather touch finish" data-src="images/tiles/leather120_tile_02.webp">
-        <img src="images/tiles/leather120_tile_02.webp" alt="Leather Warm Brown" loading="lazy"/>
-        <span class="tile-badge">600 × 1200 mm</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Leather 60 × 120 · Warm Brown</div>
-          <div class="tile-subtitle">Soft tactile leather touch finish</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card" data-cat="leather120" data-name="Leather 60×120 Ash Grey" data-sub="Sophisticated modern grey stone" data-src="images/tiles/leather120_tile_04.webp">
-        <img src="images/tiles/leather120_tile_04.webp" alt="Leather Ash Grey" loading="lazy"/>
-        <span class="tile-badge">600 × 1200 mm</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Leather 60 × 120 · Ash Grey</div>
-          <div class="tile-subtitle">Sophisticated modern grey stone</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card" data-cat="leather120" data-name="Leather 60×120 Silver Grey" data-sub="Minimalist neutral living room slab" data-src="images/tiles/leather120_tile_06.webp">
-        <img src="images/tiles/leather120_tile_06.webp" alt="Leather Silver Grey" loading="lazy"/>
-        <span class="tile-badge">600 × 1200 mm</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Leather 60 × 120 · Silver Grey</div>
-          <div class="tile-subtitle">Minimalist neutral living room slab</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card" data-cat="leather120" data-name="Leather 60×120 Pearl Grey" data-sub="Subtle marble veining with leather feel" data-src="images/tiles/leather120_tile_07.webp">
-        <img src="images/tiles/leather120_tile_07.webp" alt="Leather Pearl Grey" loading="lazy"/>
-        <span class="tile-badge">600 × 1200 mm</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Leather 60 × 120 · Pearl Grey</div>
-          <div class="tile-subtitle">Subtle marble veining with leather feel</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card tile-wide" data-cat="leather120" data-name="Leather 60×120 Bathroom Suite" data-sub="Luxury seamless bathroom feature wall" data-src="images/tiles/leather120_tile_08.webp">
-        <img src="images/tiles/leather120_tile_08.webp" alt="Bathroom Application" loading="lazy"/>
-        <span class="tile-badge">Application</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Leather 60 × 120 · Luxury Bathroom</div>
-          <div class="tile-subtitle">Luxury seamless bathroom feature wall</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card" data-cat="leather120" data-name="Leather 60×120 Dark Charcoal" data-sub="Moody dramatic feature stone" data-src="images/tiles/leather120_tile_09.webp">
-        <img src="images/tiles/leather120_tile_09.webp" alt="Leather Dark Charcoal" loading="lazy"/>
-        <span class="tile-badge">600 × 1200 mm</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Leather 60 × 120 · Charcoal</div>
-          <div class="tile-subtitle">Moody dramatic feature stone</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card tile-wide" data-cat="leather120" data-name="Leather 60×120 Bedroom Feature Wall" data-sub="Warm backdrop for contemporary bedrooms" data-src="images/tiles/leather120_tile_10.webp">
-        <img src="images/tiles/leather120_tile_10.webp" alt="Bedroom Feature Wall" loading="lazy"/>
-        <span class="tile-badge">Application</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Leather 60 × 120 · Master Bedroom Wall</div>
-          <div class="tile-subtitle">Warm backdrop for contemporary bedrooms</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card" data-cat="leather120" data-name="Leather 60×120 Warm Beige" data-sub="Natural limestone effect" data-src="images/tiles/leather120_tile_11.webp">
-        <img src="images/tiles/leather120_tile_11.webp" alt="Leather Warm Beige" loading="lazy"/>
-        <span class="tile-badge">600 × 1200 mm</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Leather 60 × 120 · Warm Beige</div>
-          <div class="tile-subtitle">Natural limestone effect</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card" data-cat="leather120" data-name="Leather 60×120 Cream Texture" data-sub="Soft woven stone tactile texture" data-src="images/tiles/leather120_tile_12.webp">
-        <img src="images/tiles/leather120_tile_12.webp" alt="Leather Cream Texture" loading="lazy"/>
-        <span class="tile-badge">600 × 1200 mm</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Leather 60 × 120 · Cream Texture</div>
-          <div class="tile-subtitle">Soft woven stone tactile texture</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card" data-cat="leather120" data-name="Leather 60×120 Interior Scene" data-sub="Lobby &amp; lounge flooring solution" data-src="images/tiles/leather120_tile_13.webp">
-        <img src="images/tiles/leather120_tile_13.webp" alt="Leather Interior Scene" loading="lazy"/>
-        <span class="tile-badge">Application</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Leather 60 × 120 · Living Lounge</div>
-          <div class="tile-subtitle">Lobby &amp; lounge flooring solution</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <!-- Syncstone -->
-      <div class="tile-card" data-cat="syncstone" data-name="Syncstone White Marble Floor" data-sub="Mirror polished Italian aesthetic" data-src="images/tiles/syncstone_tile_02.webp">
-        <img src="images/tiles/syncstone_tile_02.webp" alt="Syncstone White Marble Floor" loading="lazy"/>
-        <span class="tile-badge">Syncstone</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Syncstone · White Marble Floor</div>
-          <div class="tile-subtitle">Mirror polished Italian aesthetic</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card" data-cat="syncstone" data-name="Syncstone Statuario White" data-sub="Iconic bold grey Italian veins" data-src="images/tiles/syncstone_tile_03.webp">
-        <img src="images/tiles/syncstone_tile_03.webp" alt="Syncstone Statuario White" loading="lazy"/>
-        <span class="tile-badge">Syncstone</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Syncstone · Statuario White</div>
-          <div class="tile-subtitle">Iconic bold grey Italian veins</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card" data-cat="syncstone" data-name="Syncstone Calacatta Slab" data-sub="High gloss bookmatched look" data-src="images/tiles/syncstone_tile_04.webp">
-        <img src="images/tiles/syncstone_tile_04.webp" alt="Syncstone Calacatta Slab" loading="lazy"/>
-        <span class="tile-badge">Syncstone</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Syncstone · Calacatta Slab</div>
-          <div class="tile-subtitle">High gloss bookmatched look</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card" data-cat="syncstone" data-name="Syncstone Calacatta Gold" data-sub="Opulent gold-veined white marble" data-src="images/tiles/syncstone_tile_05.webp">
-        <img src="images/tiles/syncstone_tile_05.webp" alt="Syncstone Calacatta Gold" loading="lazy"/>
-        <span class="tile-badge">Syncstone</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Syncstone · Calacatta Gold</div>
-          <div class="tile-subtitle">Opulent gold-veined white marble</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card" data-cat="syncstone" data-name="Syncstone Arctic White Stone" data-sub="Clean architectural pure white" data-src="images/tiles/syncstone_tile_06.webp">
-        <img src="images/tiles/syncstone_tile_06.webp" alt="Syncstone Arctic White" loading="lazy"/>
-        <span class="tile-badge">Syncstone</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Syncstone · Arctic White</div>
-          <div class="tile-subtitle">Clean architectural pure white</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card" data-cat="syncstone" data-name="Syncstone Graphite Black" data-sub="Deep black with delicate white veining" data-src="images/tiles/syncstone_tile_07.webp">
-        <img src="images/tiles/syncstone_tile_07.webp" alt="Syncstone Graphite Black" loading="lazy"/>
-        <span class="tile-badge">Syncstone</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Syncstone · Graphite Black</div>
-          <div class="tile-subtitle">Deep black with delicate white veining</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card tile-wide" data-cat="syncstone" data-name="Syncstone Cladding Exterior" data-sub="Weatherproof facade &amp; feature elevation" data-src="images/tiles/syncstone_tile_08.webp">
-        <img src="images/tiles/syncstone_tile_08.webp" alt="Syncstone Cladding" loading="lazy"/>
-        <span class="tile-badge">Application</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Syncstone · Exterior Cladding</div>
-          <div class="tile-subtitle">Weatherproof facade &amp; feature elevation</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card" data-cat="syncstone" data-name="Syncstone Sandstone Beige" data-sub="Warm earthy architectural tone" data-src="images/tiles/syncstone_tile_09.webp">
-        <img src="images/tiles/syncstone_tile_09.webp" alt="Syncstone Sandstone Beige" loading="lazy"/>
-        <span class="tile-badge">Syncstone</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Syncstone · Sandstone Beige</div>
-          <div class="tile-subtitle">Warm earthy architectural tone</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card" data-cat="syncstone" data-name="Syncstone Granite Speckle" data-sub="Durable flecked textured finish" data-src="images/tiles/syncstone_tile_10.webp">
-        <img src="images/tiles/syncstone_tile_10.webp" alt="Syncstone Granite Speckle" loading="lazy"/>
-        <span class="tile-badge">Syncstone</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Syncstone · Granite Speckle</div>
-          <div class="tile-subtitle">Durable flecked textured finish</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card" data-cat="syncstone" data-name="Syncstone Azul Blue Marble" data-sub="Exotic blue statement floor" data-src="images/tiles/syncstone_tile_11.webp">
-        <img src="images/tiles/syncstone_tile_11.webp" alt="Syncstone Azul Blue" loading="lazy"/>
-        <span class="tile-badge">Syncstone</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Syncstone · Azul Blue Marble</div>
-          <div class="tile-subtitle">Exotic blue statement floor</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-
-      <div class="tile-card" data-cat="syncstone" data-name="Syncstone Premium Collection" data-sub="Ultra-fine vitrified marble texture" data-src="images/tiles/syncstone_tile_12.webp">
-        <img src="images/tiles/syncstone_tile_12.webp" alt="Syncstone Premium Collection" loading="lazy"/>
-        <span class="tile-badge">Syncstone</span>
-        <div class="tile-card-overlay">
-          <div class="tile-title">Syncstone · Premium Collection</div>
-          <div class="tile-subtitle">Ultra-fine vitrified marble texture</div>
-          <span class="tile-enquire-btn"><i class="fas fa-expand"></i> Inspect &amp; Enquire</span>
-        </div>
-      </div>
-    </div>
-
-    <div style="text-align: center; margin-top: 44px;">
-      <a href="https://wa.me/919468634597?text=Hi%20Aashiyana%20Decor%2C%20please%20send%20the%20complete%20tiles%20catalog%20with%20prices." target="_blank" class="btn btn-primary">
-        <i class="fab fa-whatsapp"></i> Request Full Tile PDF Catalog
-      </a>
-    </div>
+  <div style="text-align: center; margin-top: 56px;">
+    <a href="https://wa.me/919468634597?text=Hi%20Aashiyana%20Decor%2C%20please%20send%20the%20complete%20stone%20and%20slab%20catalog%20with%20prices." target="_blank" class="atelier-btn-espresso" style="display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px;">
+      <i class="fab fa-whatsapp"></i> Request Full Stone &amp; Slab Pricing PDF &rarr;
+    </a>
   </div>
 </section>
 
@@ -707,46 +733,15 @@
   </div>
 </section>
 
-<!-- ═══ 8. SHOWROOM DESK & DIRECT CONTACT ═══ -->
-<section class="atelier-section" id="contact">
-  <div class="atelier-section-header">
-    <h2 class="atelier-section-title">Showroom Desk</h2>
-    <span class="atelier-kicker" style="margin: 0;">Mansarovar &middot; Jaipur</span>
-  </div>
-
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
-    <div style="background: var(--stone-plaster); padding: 48px; border-radius: 4px;">
-      <span class="atelier-kicker">Jaipur Showroom &amp; Stockyard</span>
-      <h3 style="font-family: var(--font-roman); font-size: 1.5rem; letter-spacing: 0.1em; color: var(--stone-text-main); margin-bottom: 16px;">Plot No. 8, Opp. Metro Pillar No. 30</h3>
-      <p style="font-family: var(--font-editorial); font-size: 1.15rem; color: var(--stone-text-body); line-height: 1.7; margin-bottom: 24px;">
-        Gopalpura Bypass, Mansarovar, Jaipur, Rajasthan 302020. Easy on-site parking and full slab dry-lay preview yard.
-      </p>
-      <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; font-size: 0.88rem;">
-        <div><strong>Direct Lines:</strong> <a href="tel:+919468634597" style="color: var(--stone-text-main); text-decoration: underline;">+91 94686 34597</a> &middot; <a href="tel:+919314021950" style="color: var(--stone-text-main); text-decoration: underline;">+91 93140 21950</a></div>
-        <div><strong>Opening Hours:</strong> Mon - Sat: 9:00 AM - 8:00 PM (Sunday by Appointment)</div>
-        <div><strong>GSTIN:</strong> 08ADGPG4545H1ZL</div>
-      </div>
-      <div style="display: flex; gap: 14px; flex-wrap: wrap;">
-        <a href="https://wa.me/919468634597" target="_blank" class="atelier-btn-espresso"><i class="fab fa-whatsapp"></i> Chat with Stone Specialist</a>
-        <a href="https://maps.google.com/?q=26.8680,75.7520" target="_blank" class="atelier-btn-outline"><i class="fas fa-directions"></i> Get Directions</a>
-      </div>
-    </div>
-
-    <div style="border-radius: 4px; overflow: hidden; height: 420px; border: 1px solid var(--stone-border);">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.887258932822!2d75.7520!3d26.8680!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDUyJzA0LjgiTiA3NcKwNDUnMDcuMiJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Aashiyana Decor Location Map"></iframe>
-    </div>
-  </div>
-</section>
-
 <!-- ═══ ATELIER FOOTER ═══ -->
-<footer class="atelier-footer">
+<footer class="atelier-footer" id="footer">
   <div class="atelier-footer-container">
     <div class="atelier-footer-grid">
       <!-- Col 1: Atelier Brand & Manifesto -->
       <div class="atelier-footer-col">
         <div class="atelier-footer-brand">
-          <span class="atelier-brand-logo">Aashiyana &middot; Stone</span>
-          <span class="atelier-brand-sub">Atelier Jaipur &middot; Estd. 2005</span>
+          <span class="atelier-brand-logo">Aashiyana Decor</span>
+          <span class="atelier-brand-sub">Jaipur &middot; Estd. 2005</span>
         </div>
         <p class="atelier-footer-desc">
           Jaipur's premier stone atelier and direct supplier of imported Italian marble, Rajasthan gangsaw granite, high-performance vitrified tiles, and authorized Specta Quartz slabs. Every slab carries its own story.
