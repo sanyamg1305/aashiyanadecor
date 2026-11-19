@@ -352,4 +352,28 @@
     </image:image>
   </url>
 
+  <!-- Local Authority: Vaishali Nagar Jaipur Stone & Tiles -->
+  <url>
+    <loc>https://aashiyanadecor.in/marble-granite-tiles-vaishali-nagar-jaipur.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
+      <image:title>Marble Granite &amp; Tiles Vaishali Nagar Jaipur</image:title>
+    </image:image>
+  </url>
+
+  <!-- Trade Desk: Architects & Interior Designers Jaipur -->
+  <url>
+    <loc>https://aashiyanadecor.in/architects-interior-designers-jaipur.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
+      <image:title>Architects &amp; Designers Trade Desk Stone &amp; Tiles Jaipur</image:title>
+    </image:image>
+  </url>
+
 </urlset>

@@ -19,3 +19,4 @@ Allow: /
 
 # Canonical Sitemap & LLM Discovery
 Sitemap: https://aashiyanadecor.in/sitemap.xml
+# Geo Location: https://aashiyanadecor.in/location.kml

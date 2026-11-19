@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Aashiyana Decor - Jaipur Stone Atelier &amp; Showroom</name>
+    <description>Authorized Specta Quartz, Imported Italian Marble, Gangsaw Granite, and Designer Vitrified Tiles in Jaipur, Rajasthan.</description>
+    <Placemark>
+      <name>Aashiyana Decor Showroom &amp; Stockyard</name>
+      <description>Plot No. 8, Opp. Metro Pillar No. 30, Gopalpura Bypass, Mansarovar, Jaipur, Rajasthan 302020. Phone: +91 94686 34597</description>
+      <Point>
+        <coordinates>75.7520,26.8680,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
