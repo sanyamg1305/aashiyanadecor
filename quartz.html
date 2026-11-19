@@ -59,6 +59,23 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "Product",
+        "@id": "https://aashiyanadecor.in/quartz.html#specta-gold-rush",
+        "name": "Specta Quartz Gold Rush Kitchen Countertop Slabs Jaipur",
+        "image": "https://aashiyanadecor.in/images/GoldRush.webp",
+        "description": "Authorized Specta Quartz dealer in Jaipur. Non-porous stain-proof kitchen platforms with zero turmeric absorption and 10-year warranty.",
+        "brand": { "@type": "Brand", "name": "Specta Quartz" },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "INR",
+          "lowPrice": "280",
+          "highPrice": "750",
+          "priceUnit": "sq.ft.",
+          "availability": "https://schema.org/InStock",
+          "seller": { "@id": "https://aashiyanadecor.in/#business" }
+        }
+      },
+      {
         "@type": "CollectionPage",
         "@id": "https://aashiyanadecor.in/quartz.html#page",
         "name": "Specta Quartz Dealer in Jaipur | Kitchen Countertops | Aashiyana Decor",
@@ -107,6 +124,7 @@
   </script>
 
   <!-- ═══ PRECONNECT & ASSETS ═══ -->
+  <link rel="preload" as="image" href="images/GoldRush.webp" fetchpriority="high"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet"/>

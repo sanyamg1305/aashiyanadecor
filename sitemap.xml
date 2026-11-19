@@ -270,12 +270,24 @@
   <!-- Commercial Guide: Best Tile Store in Jaipur -->
   <url>
     <loc>https://aashiyanadecor.in/tile-store-jaipur.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
       <image:loc>https://aashiyanadecor.in/images/tiles/leather120_tile_08.webp</image:loc>
       <image:title>Best Tile Store in Jaipur - Vitrified &amp; Bathroom Tiles</image:title>
+    </image:image>
+  </url>
+
+  <!-- Commercial Guide: Kishangarh Marble vs Jaipur -->
+  <url>
+    <loc>https://aashiyanadecor.in/kishangarh-marble-vs-jaipur.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
+      <image:title>Kishangarh Marble vs Jaipur - True Cost of Italian Marble Comparison</image:title>
     </image:image>
   </url>
 
