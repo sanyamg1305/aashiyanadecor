@@ -376,4 +376,28 @@
     </image:image>
   </url>
 
+  <!-- Tool: Stone & Tile Cost Calculator Jaipur -->
+  <url>
+    <loc>https://aashiyanadecor.in/stone-tile-calculator-jaipur.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
+      <image:title>Stone &amp; Tile Cost Calculator Jaipur - Aashiyana Decor</image:title>
+    </image:image>
+  </url>
+
+  <!-- Local Authority: Mansarovar Showroom Jaipur -->
+  <url>
+    <loc>https://aashiyanadecor.in/stone-tile-store-mansarovar-jaipur.html</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
+      <image:title>Stone &amp; Tile Store Mansarovar Jaipur - Aashiyana Decor</image:title>
+    </image:image>
+  </url>
+
 </urlset>
