@@ -5,95 +5,95 @@
 
   <!-- 1. Homepage -->
   <url>
-    <loc>https://aashiyanadecor.in/</loc>
+    <loc>https://www.aashiyanadecor.in/</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
       <image:title>Black Galaxy Granite Feature Wall - Aashiyana Decor Jaipur</image:title>
     </image:image>
   </url>
 
   <!-- 2. Tiles Collection -->
   <url>
-    <loc>https://aashiyanadecor.in/tiles.html</loc>
+    <loc>https://www.aashiyanadecor.in/tiles</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/tiles/leather120_tile_08.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/tiles/leather120_tile_08.webp</image:loc>
       <image:title>Leather Finish Bathroom Tiles Jaipur - Aashiyana Decor</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/tiles/syncstone_tile_03.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/tiles/syncstone_tile_03.webp</image:loc>
       <image:title>Syncstone Statuario Marble Look Tiles Jaipur</image:title>
     </image:image>
   </url>
 
   <!-- 3. Granite Slabs -->
   <url>
-    <loc>https://aashiyanadecor.in/granite.html</loc>
+    <loc>https://www.aashiyanadecor.in/granite</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
       <image:title>Black Galaxy Granite TV Feature Wall Jaipur</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/RosyPink.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/RosyPink.webp</image:loc>
       <image:title>Rosy Pink Granite Kitchen Countertop Jaipur</image:title>
     </image:image>
   </url>
 
   <!-- 4. Imported Marble -->
   <url>
-    <loc>https://aashiyanadecor.in/marble.html</loc>
+    <loc>https://www.aashiyanadecor.in/marble</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/tiles/syncstone_tile_03.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/tiles/syncstone_tile_03.webp</image:loc>
       <image:title>Italian Statuario Marble Slabs Jaipur - Aashiyana Decor</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
       <image:title>Ambaji White Marble Living Room Flooring Jaipur</image:title>
     </image:image>
   </url>
 
   <!-- 5. Specta Quartz -->
   <url>
-    <loc>https://aashiyanadecor.in/quartz.html</loc>
+    <loc>https://www.aashiyanadecor.in/quartz</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/GoldRush.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/GoldRush.webp</image:loc>
       <image:title>Gold Rush Specta Quartz Kitchen Countertop Jaipur</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/IceStorm.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/IceStorm.webp</image:loc>
       <image:title>IceStorm Quartz Island Waterfall Jaipur</image:title>
     </image:image>
   </url>
 
   <!-- 6. About Us -->
   <url>
-    <loc>https://aashiyanadecor.in/about.html</loc>
+    <loc>https://www.aashiyanadecor.in/about</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
       <image:title>About Aashiyana Decor Stone Showroom Jaipur</image:title>
     </image:image>
   </url>
 
   <!-- 7. Contact Us -->
   <url>
-    <loc>https://aashiyanadecor.in/contact.html</loc>
+    <loc>https://www.aashiyanadecor.in/contact</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -101,192 +101,192 @@
 
   <!-- 8. Stone &amp; Tile Blog Hub -->
   <url>
-    <loc>https://aashiyanadecor.in/blog.html</loc>
+    <loc>https://www.aashiyanadecor.in/blog</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
       <image:title>Stone and Tile Guides - Aashiyana Decor Jaipur</image:title>
     </image:image>
   </url>
 
   <!-- Blog: best-granite-for-kitchen-countertops-jaipur -->
   <url>
-    <loc>https://aashiyanadecor.in/blog/best-granite-for-kitchen-countertops-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/blog/best-granite-for-kitchen-countertops-jaipur</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
       <image:title>How to Choose the Best Granite for Kitchen Countertops in Jaipur (2026 Guide)</image:title>
     </image:image>
   </url>
 
   <!-- Blog: italian-marble-vs-vitrified-tiles-comparison -->
   <url>
-    <loc>https://aashiyanadecor.in/blog/italian-marble-vs-vitrified-tiles-comparison.html</loc>
+    <loc>https://www.aashiyanadecor.in/blog/italian-marble-vs-vitrified-tiles-comparison</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/tiles/syncstone_tile_03.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/tiles/syncstone_tile_03.webp</image:loc>
       <image:title>Italian Marble vs. Vitrified Tiles: Which is Best for Your Jaipur Home?</image:title>
     </image:image>
   </url>
 
   <!-- Blog: specta-quartz-countertops-indian-kitchen-guide -->
   <url>
-    <loc>https://aashiyanadecor.in/blog/specta-quartz-countertops-indian-kitchen-guide.html</loc>
+    <loc>https://www.aashiyanadecor.in/blog/specta-quartz-countertops-indian-kitchen-guide</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/GoldRush.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/GoldRush.webp</image:loc>
       <image:title>Specta Quartz Countertops: The Stain-Proof Solution for Indian Cooking</image:title>
     </image:image>
   </url>
 
   <!-- Blog: tile-size-selection-guide-living-room-bathroom -->
   <url>
-    <loc>https://aashiyanadecor.in/blog/tile-size-selection-guide-living-room-bathroom.html</loc>
+    <loc>https://www.aashiyanadecor.in/blog/tile-size-selection-guide-living-room-bathroom</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/tiles/leather120_tile_08.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/tiles/leather120_tile_08.webp</image:loc>
       <image:title>Tile Size Selection Guide: 600×1200mm vs 600×600mm for Living Rooms &amp; Bathrooms</image:title>
     </image:image>
   </url>
 
   <!-- Blog: black-galaxy-granite-price-quality-jaipur -->
   <url>
-    <loc>https://aashiyanadecor.in/blog/black-galaxy-granite-price-quality-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/blog/black-galaxy-granite-price-quality-jaipur</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
       <image:title>Black Galaxy Granite: Price, Grading, Golden Flecks &amp; Buying Guide in Jaipur</image:title>
     </image:image>
   </url>
 
   <!-- Blog: how-to-clean-polish-italian-marble-flooring -->
   <url>
-    <loc>https://aashiyanadecor.in/blog/how-to-clean-polish-italian-marble-flooring.html</loc>
+    <loc>https://www.aashiyanadecor.in/blog/how-to-clean-polish-italian-marble-flooring</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
       <image:title>How to Clean, Maintain &amp; Polish Italian Marble Flooring in Rajasthan Homes</image:title>
     </image:image>
   </url>
 
   <!-- Blog: statuario-marble-buyers-guide-jaipur -->
   <url>
-    <loc>https://aashiyanadecor.in/blog/statuario-marble-buyers-guide-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/blog/statuario-marble-buyers-guide-jaipur</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/tiles/syncstone_tile_03.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/tiles/syncstone_tile_03.webp</image:loc>
       <image:title>The Connoisseur’s Guide to Buying Statuario &amp; Imported White Marble in Jaipur</image:title>
     </image:image>
   </url>
 
   <!-- Blog: bathroom-wall-floor-tile-trends-jaipur -->
   <url>
-    <loc>https://aashiyanadecor.in/blog/bathroom-wall-floor-tile-trends-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/blog/bathroom-wall-floor-tile-trends-jaipur</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/tiles/leather120_tile_08.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/tiles/leather120_tile_08.webp</image:loc>
       <image:title>Top Bathroom Wall &amp; Floor Tile Trends in Jaipur (Anti-Skid &amp; Leather Finish)</image:title>
     </image:image>
   </url>
 
   <!-- Blog: natural-granite-vs-engineered-quartz-countertops -->
   <url>
-    <loc>https://aashiyanadecor.in/blog/natural-granite-vs-engineered-quartz-countertops.html</loc>
+    <loc>https://www.aashiyanadecor.in/blog/natural-granite-vs-engineered-quartz-countertops</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/MorningMist.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/MorningMist.webp</image:loc>
       <image:title>Natural Granite vs Engineered Quartz: Which Countertop Surface Wins?</image:title>
     </image:image>
   </url>
 
   <!-- Blog: wholesale-stone-tile-buying-guide-contractors-jaipur -->
   <url>
-    <loc>https://aashiyanadecor.in/blog/wholesale-stone-tile-buying-guide-contractors-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/blog/wholesale-stone-tile-buying-guide-contractors-jaipur</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
       <image:title>Wholesale Stone &amp; Tile Sourcing in Jaipur: The Builder &amp; Architect Guide</image:title>
     </image:image>
   </url>
 
   <!-- Commercial Guide: Italian Marble Price in Jaipur -->
   <url>
-    <loc>https://aashiyanadecor.in/italian-marble-price-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/italian-marble-price-jaipur</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/tiles/syncstone_tile_03.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/tiles/syncstone_tile_03.webp</image:loc>
       <image:title>Italian Marble Price in Jaipur - Statuario &amp; Calacatta Slabs</image:title>
     </image:image>
   </url>
 
   <!-- Commercial Guide: Specta Quartz Dealer Jaipur -->
   <url>
-    <loc>https://aashiyanadecor.in/specta-quartz-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/specta-quartz-jaipur</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/GoldRush.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/GoldRush.webp</image:loc>
       <image:title>Authorized Specta Quartz Dealer Jaipur - Kitchen Countertops</image:title>
     </image:image>
   </url>
 
   <!-- Commercial Guide: Rajasthan Granite Price in Jaipur -->
   <url>
-    <loc>https://aashiyanadecor.in/granite-price-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/granite-price-jaipur</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
       <image:title>Rajasthan Gangsaw Granite Price List in Jaipur - Black Galaxy</image:title>
     </image:image>
   </url>
 
   <!-- Commercial Guide: Best Tile Store in Jaipur -->
   <url>
-    <loc>https://aashiyanadecor.in/tile-store-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/tile-store-jaipur</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/tiles/leather120_tile_08.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/tiles/leather120_tile_08.webp</image:loc>
       <image:title>Best Tile Store in Jaipur - Vitrified &amp; Bathroom Tiles</image:title>
     </image:image>
   </url>
 
   <!-- Commercial Guide: Kishangarh Marble vs Jaipur -->
   <url>
-    <loc>https://aashiyanadecor.in/kishangarh-marble-vs-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/kishangarh-marble-vs-jaipur</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
       <image:title>Kishangarh Marble vs Jaipur - True Cost of Italian Marble Comparison</image:title>
     </image:image>
   </url>
@@ -294,157 +294,194 @@
 
   <!-- Blog 11: Specta Quartz Price Colours Models -->
   <url>
-    <loc>https://aashiyanadecor.in/blog/specta-quartz-price-colours-models-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/blog/specta-quartz-price-colours-models-jaipur</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/GoldRush.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/GoldRush.webp</image:loc>
       <image:title>Specta Quartz Price, Colours &amp; Models in Jaipur</image:title>
     </image:image>
   </url>
 
   <!-- Blog 12: Is It Cheaper to Buy Marble in Kishangarh or Jaipur -->
   <url>
-    <loc>https://aashiyanadecor.in/blog/is-it-cheaper-to-buy-marble-in-kishangarh-or-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/blog/is-it-cheaper-to-buy-marble-in-kishangarh-or-jaipur</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
       <image:title>Is It Cheaper to Buy Italian Marble in Kishangarh or Jaipur</image:title>
     </image:image>
   </url>
 
   <!-- Blog 13: Kitchen Countertop Materials Compared -->
   <url>
-    <loc>https://aashiyanadecor.in/blog/kitchen-countertop-materials-comparison-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/blog/kitchen-countertop-materials-comparison-jaipur</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
       <image:title>Kitchen Countertop Materials Compared: Granite vs Specta Quartz vs Nano White</image:title>
     </image:image>
   </url>
 
   <!-- Blog 14: Large-Format Porcelain Slabs vs Italian Marble -->
   <url>
-    <loc>https://aashiyanadecor.in/blog/large-format-porcelain-slabs-vs-marble-flooring-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/blog/large-format-porcelain-slabs-vs-marble-flooring-jaipur</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/tiles/leather120_tile_08.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/tiles/leather120_tile_08.webp</image:loc>
       <image:title>Large-Format Porcelain Slabs vs Natural Italian Marble Jaipur</image:title>
     </image:image>
   </url>
 
   <!-- Blog 15: Exterior Wall Cladding & Elevation Tiles -->
   <url>
-    <loc>https://aashiyanadecor.in/blog/exterior-wall-cladding-flamed-granite-elevation-tiles-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/blog/exterior-wall-cladding-flamed-granite-elevation-tiles-jaipur</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
       <image:title>Exterior Wall Cladding &amp; Elevation Tiles - Flamed Granite Jaipur</image:title>
     </image:image>
   </url>
 
   <!-- Local Authority: Vaishali Nagar Jaipur Stone & Tiles -->
   <url>
-    <loc>https://aashiyanadecor.in/marble-granite-tiles-vaishali-nagar-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/marble-granite-tiles-vaishali-nagar-jaipur</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
       <image:title>Marble Granite &amp; Tiles Vaishali Nagar Jaipur</image:title>
     </image:image>
   </url>
 
   <!-- Trade Desk: Architects & Interior Designers Jaipur -->
   <url>
-    <loc>https://aashiyanadecor.in/architects-interior-designers-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/architects-interior-designers-jaipur</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
       <image:title>Architects &amp; Designers Trade Desk Stone &amp; Tiles Jaipur</image:title>
     </image:image>
   </url>
 
   <!-- Tool: Stone & Tile Cost Calculator Jaipur -->
   <url>
-    <loc>https://aashiyanadecor.in/stone-tile-calculator-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/stone-tile-calculator-jaipur</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
       <image:title>Stone &amp; Tile Cost Calculator Jaipur - Aashiyana Decor</image:title>
     </image:image>
   </url>
 
   <!-- Local Authority: Mansarovar Showroom Jaipur -->
   <url>
-    <loc>https://aashiyanadecor.in/stone-tile-store-mansarovar-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/stone-tile-store-mansarovar-jaipur</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
       <image:title>Stone &amp; Tile Store Mansarovar Jaipur - Aashiyana Decor</image:title>
     </image:image>
   </url>
 
   <!-- Material Guide: Nano White Countertop Price Jaipur -->
   <url>
-    <loc>https://aashiyanadecor.in/nano-white-countertop-price-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/nano-white-countertop-price-jaipur</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
       <image:title>Nano White G5 Countertop Price Jaipur - Aashiyana Decor</image:title>
     </image:image>
   </url>
 
   <!-- Flooring Guide: Wooden Finish Tiles Jaipur -->
   <url>
-    <loc>https://aashiyanadecor.in/wooden-tiles-flooring-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/wooden-tiles-flooring-jaipur</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/tiles/leather120_tile_08.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/tiles/leather120_tile_08.webp</image:loc>
       <image:title>Wooden Finish Vitrified Floor Tiles Jaipur - Aashiyana Decor</image:title>
     </image:image>
   </url>
 
   <!-- Local Authority: Jagatpura Jaipur Stone & Tiles -->
   <url>
-    <loc>https://aashiyanadecor.in/marble-granite-tiles-jagatpura-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/marble-granite-tiles-jagatpura-jaipur</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
       <image:title>Marble Granite &amp; Tiles Jagatpura Jaipur - Aashiyana Decor</image:title>
     </image:image>
   </url>
 
   <!-- Local Authority: Ajmer Road Jaipur Stone & Tiles -->
   <url>
-    <loc>https://aashiyanadecor.in/granite-marble-tiles-ajmer-road-jaipur.html</loc>
+    <loc>https://www.aashiyanadecor.in/granite-marble-tiles-ajmer-road-jaipur</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
       <image:title>Granite Marble &amp; Tiles Ajmer Road Jaipur - Aashiyana Decor</image:title>
+    </image:image>
+  </url>
+
+
+  <!-- Product: Black Galaxy Granite Jaipur -->
+  <url>
+    <loc>https://www.aashiyanadecor.in/black-galaxy-granite-jaipur</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/black-galaxy-granite-slab-jaipur.webp</image:loc>
+      <image:title>Black Galaxy Granite Jaipur - Aashiyana Decor</image:title>
+    </image:image>
+  </url>
+
+  <!-- Product: Statuario Italian Marble Jaipur -->
+  <url>
+    <loc>https://www.aashiyanadecor.in/statuario-marble-jaipur</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.aashiyanadecor.in/images/marble/statuario-extra-marble-slab-jaipur.webp</image:loc>
+      <image:title>Statuario Italian Marble Jaipur - Aashiyana Decor</image:title>
+    </image:image>
+  </url>
+
+  <!-- Product: Specta Gold Rush Quartz Jaipur -->
+  <url>
+    <loc>https://www.aashiyanadecor.in/specta-gold-rush-quartz</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.aashiyanadecor.in/images/quartz/specta-gold-rush-quartz-slab.webp</image:loc>
+      <image:title>Specta Gold Rush Quartz Jaipur - Aashiyana Decor</image:title>
     </image:image>
   </url>
 
