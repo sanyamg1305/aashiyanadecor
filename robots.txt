@@ -20,3 +20,5 @@ Allow: /
 # Canonical Sitemap & LLM Discovery
 Sitemap: https://www.aashiyanadecor.in/sitemap.xml
 # Geo Location: https://www.aashiyanadecor.in/location.kml
+# LLM Knowledge Bases: https://www.aashiyanadecor.in/llms.txt
+# LLM Full Reference: https://www.aashiyanadecor.in/llms-full.txt

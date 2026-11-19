@@ -485,4 +485,28 @@
     </image:image>
   </url>
 
+  <!-- Product: Steel Grey Granite Jaipur -->
+  <url>
+    <loc>https://www.aashiyanadecor.in/steel-grey-granite-jaipur</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/steel-grey-granite-slab-500x500.webp</image:loc>
+      <image:title>Steel Grey Granite Jaipur - Aashiyana Decor</image:title>
+    </image:image>
+  </url>
+
+  <!-- Product: Bathroom Tiles Jaipur -->
+  <url>
+    <loc>https://www.aashiyanadecor.in/bathroom-tiles-jaipur</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.aashiyanadecor.in/images/tiles/leather120_tile_08.webp</image:loc>
+      <image:title>Bathroom Tiles Jaipur - Aashiyana Decor</image:title>
+    </image:image>
+  </url>
+
 </urlset>
