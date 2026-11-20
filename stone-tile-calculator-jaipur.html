@@ -36,19 +36,19 @@
     "@graph": [
       {
         "@type": "WebApplication",
-        "@id": "https://aashiyanadecor.in/stone-tile-calculator-jaipur.html#app",
+        "@id": "https://www.aashiyanadecor.in/stone-tile-calculator-jaipur#app",
         "name": "Aashiyana Decor Stone & Tile Estimator",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "All",
-        "url": "https://aashiyanadecor.in/stone-tile-calculator-jaipur.html",
+        "url": "https://www.aashiyanadecor.in/stone-tile-calculator-jaipur",
         "description": "Interactive stone, granite, marble, and tile budget estimator for residential and commercial architectural projects in Jaipur."
       },
       {
         "@type": ["HomeAndConstructionBusiness", "Store"],
-        "@id": "https://aashiyanadecor.in/#calculator-store",
+        "@id": "https://www.aashiyanadecor.in/#calculator-store",
         "name": "Aashiyana Decor",
         "telephone": "+91-94686-34597",
-        "url": "https://aashiyanadecor.in/stone-tile-calculator-jaipur.html",
+        "url": "https://www.aashiyanadecor.in/stone-tile-calculator-jaipur",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Plot No. 8, Opp. Metro Pillar No. 30, Gopalpura Bypass",
@@ -61,8 +61,8 @@
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aashiyanadecor.in/" },
-          { "@type": "ListItem", "position": 2, "name": "Stone Cost Calculator", "item": "https://aashiyanadecor.in/stone-tile-calculator-jaipur.html" }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.aashiyanadecor.in/" },
+          { "@type": "ListItem", "position": 2, "name": "Stone Cost Calculator", "item": "https://www.aashiyanadecor.in/stone-tile-calculator-jaipur" }
         ]
       }
     ]
@@ -118,7 +118,7 @@
       Stone &amp; Tile Cost Calculator
     </h1>
     <p style="font-family: var(--font-editorial); font-size: 1.2rem; color: var(--stone-text-muted); line-height: 1.6; max-width: 750px; margin: 0 auto;">
-      Estimate your material budget for Indian kitchens, luxury living rooms, and bathrooms in Jaipur. Includes 8% cutting waste buffers and stockyard rate benchmarks.
+      Estimate your material budget for Indian kitchens, luxury living rooms, and bathrooms in Jaipur. Enter your area and rate per sq.ft. to calculate instant project totals with cutting waste buffers.
     </p>
   </div>
 </section>
@@ -131,7 +131,7 @@
       
       <!-- Space Application -->
       <div>
-        <label style="font-family: var(--font-roman); font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--stone-espresso); font-weight: 600; display: block; margin-bottom: 8px;">
+        <label for="calcApplication" style="font-family: var(--font-roman); font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--stone-espresso); font-weight: 600; display: block; margin-bottom: 8px;">
           1. Select Project Application
         </label>
         <select id="calcApplication" style="width: 100%; padding: 12px 14px; border: 1px solid var(--stone-border); border-radius: 2px; font-size: 0.95rem; background: var(--stone-bg); color: var(--stone-espresso);">
@@ -140,40 +140,58 @@
           <option value="bathroom">Bathroom Floor &amp; Wall Tiles</option>
           <option value="stairs">Staircase Steps &amp; Risers</option>
           <option value="exterior">Exterior Elevation &amp; Parking</option>
+          <option value="fullhome">Full Home Stone &amp; Tile Work</option>
         </select>
       </div>
 
       <!-- Material Selection -->
       <div>
-        <label style="font-family: var(--font-roman); font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--stone-espresso); font-weight: 600; display: block; margin-bottom: 8px;">
+        <label for="calcMaterial" style="font-family: var(--font-roman); font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--stone-espresso); font-weight: 600; display: block; margin-bottom: 8px;">
           2. Select Material Grade
         </label>
         <select id="calcMaterial" style="width: 100%; padding: 12px 14px; border: 1px solid var(--stone-border); border-radius: 2px; font-size: 0.95rem; background: var(--stone-bg); color: var(--stone-espresso);">
-          <option value="specta_gold" data-rate="450" data-name="Specta Quartz (Gold Rush / Ice Storm)">Specta Quartz (Gold Rush / Ice Storm) - Rs 450/sq.ft.</option>
-          <option value="specta_calacatta" data-rate="620" data-name="Specta Venera (Calacatta Bookmatch)">Specta Venera (Calacatta Bookmatch) - Rs 620/sq.ft.</option>
-          <option value="granite_galaxy" data-rate="220" data-name="Black Galaxy Gangsaw Granite">Black Galaxy Gangsaw Granite - Rs 220/sq.ft.</option>
-          <option value="granite_steel" data-rate="140" data-name="Steel Grey Flamed / Polished Granite">Steel Grey Flamed Granite - Rs 140/sq.ft.</option>
-          <option value="marble_statuario" data-rate="950" data-name="Imported Statuario Italian Marble">Imported Statuario Italian Marble - Rs 950/sq.ft.</option>
-          <option value="marble_botticino" data-rate="480" data-name="Botticino Classico Italian Marble">Botticino Classico Italian Marble - Rs 480/sq.ft.</option>
-          <option value="tiles_leather" data-rate="72" data-name="60x120 Leather Finish Vitrified Tiles">60x120 Leather Vitrified Tiles - Rs 72/sq.ft.</option>
-          <option value="tiles_antiskid" data-rate="55" data-name="Anti-Skid Bathroom Floor Tiles">Anti-Skid Bathroom Tiles - Rs 55/sq.ft.</option>
+          <option value="specta_quartz">Specta Quartz (Engineered Stone)</option>
+          <option value="italian_marble">Imported Italian Marble (Statuario / Botticino)</option>
+          <option value="gangsaw_granite">Gangsaw Granite (Black Galaxy / Steel Grey)</option>
+          <option value="vitrified_tiles">Designer Vitrified Tiles (GVT / PGVT / High Gloss)</option>
+          <option value="nano_white">Nano White Crystallized Glass (G5 / G7)</option>
+          <option value="wooden_tiles">Wooden Finish Vitrified Planks</option>
+          <option value="kota_sandstone">Kota Stone &amp; Natural Sandstone</option>
+          <option value="custom_stone">Other Stone / Tile Material</option>
         </select>
       </div>
 
-      <!-- Area in Sq.Ft. -->
-      <div style="grid-column: 1 / -1;">
-        <label style="font-family: var(--font-roman); font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--stone-espresso); font-weight: 600; display: block; margin-bottom: 8px;">
-          3. Enter Approximate Area (Square Feet)
+      <!-- Price Per Sq.Ft. (User Input) -->
+      <div>
+        <label for="calcRate" style="font-family: var(--font-roman); font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--stone-espresso); font-weight: 600; display: block; margin-bottom: 8px;">
+          3. Enter Price Per Sq.Ft. (Rs.)
         </label>
-        <div style="display: flex; gap: 14px; align-items: center;">
-          <input type="number" id="calcArea" value="150" min="10" max="50000" style="flex: 1; padding: 12px 14px; border: 1px solid var(--stone-border); border-radius: 2px; font-size: 1.1rem; font-weight: 600; color: var(--stone-espresso);"/>
+        <div style="display: flex; gap: 10px; align-items: center;">
+          <span style="font-size: 1.05rem; font-weight: 600; color: var(--stone-espresso);">Rs.</span>
+          <input type="number" id="calcRate" placeholder="e.g. 450" min="1" max="100000" style="flex: 1; padding: 12px 14px; border: 1px solid var(--stone-border); border-radius: 2px; font-size: 1.05rem; font-weight: 600; color: var(--stone-espresso); background: var(--stone-bg);"/>
+          <span style="font-size: 0.95rem; color: var(--stone-text-muted); font-weight: 500;">/ sq.ft.</span>
+        </div>
+      </div>
+
+      <!-- Area in Sq.Ft. -->
+      <div>
+        <label for="calcArea" style="font-family: var(--font-roman); font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--stone-espresso); font-weight: 600; display: block; margin-bottom: 8px;">
+          4. Enter Approximate Area (Square Feet)
+        </label>
+        <div style="display: flex; gap: 10px; align-items: center;">
+          <input type="number" id="calcArea" value="150" min="10" max="50000" style="flex: 1; padding: 12px 14px; border: 1px solid var(--stone-border); border-radius: 2px; font-size: 1.05rem; font-weight: 600; color: var(--stone-espresso); background: var(--stone-bg);"/>
           <span style="font-size: 0.95rem; color: var(--stone-text-muted); font-weight: 500;">sq.ft.</span>
         </div>
-        <div style="margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap;">
-          <button type="button" class="calc-preset-btn" data-sqft="75" style="background: var(--stone-plaster); border: 1px solid var(--stone-border); padding: 4px 10px; font-size: 0.78rem; border-radius: 2px; cursor: pointer;">Compact Kitchen (75 sq.ft.)</button>
-          <button type="button" class="calc-preset-btn" data-sqft="150" style="background: var(--stone-plaster); border: 1px solid var(--stone-border); padding: 4px 10px; font-size: 0.78rem; border-radius: 2px; cursor: pointer;">Large Island Kitchen (150 sq.ft.)</button>
-          <button type="button" class="calc-preset-btn" data-sqft="600" style="background: var(--stone-plaster); border: 1px solid var(--stone-border); padding: 4px 10px; font-size: 0.78rem; border-radius: 2px; cursor: pointer;">Hall / Living Room (600 sq.ft.)</button>
-          <button type="button" class="calc-preset-btn" data-sqft="2000" style="background: var(--stone-plaster); border: 1px solid var(--stone-border); padding: 4px 10px; font-size: 0.78rem; border-radius: 2px; cursor: pointer;">Full Villa Flooring (2000 sq.ft.)</button>
+      </div>
+
+      <!-- Quick Area Presets -->
+      <div style="grid-column: 1 / -1; margin-top: -6px;">
+        <span style="font-size: 0.8rem; color: var(--stone-text-muted); display: block; margin-bottom: 6px;">Quick Area Presets:</span>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <button type="button" class="calc-preset-btn" data-sqft="75" style="background: var(--stone-plaster); border: 1px solid var(--stone-border); padding: 5px 12px; font-size: 0.8rem; border-radius: 2px; cursor: pointer; color: var(--stone-espresso);">Compact Kitchen (75 sq.ft.)</button>
+          <button type="button" class="calc-preset-btn" data-sqft="150" style="background: var(--stone-plaster); border: 1px solid var(--stone-border); padding: 5px 12px; font-size: 0.8rem; border-radius: 2px; cursor: pointer; color: var(--stone-espresso);">Large Island Kitchen (150 sq.ft.)</button>
+          <button type="button" class="calc-preset-btn" data-sqft="600" style="background: var(--stone-plaster); border: 1px solid var(--stone-border); padding: 5px 12px; font-size: 0.8rem; border-radius: 2px; cursor: pointer; color: var(--stone-espresso);">Hall / Living Room (600 sq.ft.)</button>
+          <button type="button" class="calc-preset-btn" data-sqft="2000" style="background: var(--stone-plaster); border: 1px solid var(--stone-border); padding: 5px 12px; font-size: 0.8rem; border-radius: 2px; cursor: pointer; color: var(--stone-espresso);">Full Villa Flooring (2000 sq.ft.)</button>
         </div>
       </div>
     </div>
@@ -182,7 +200,7 @@
     <div style="background: var(--stone-plaster); border: 1px solid var(--stone-border); border-radius: 4px; padding: 26px 24px; margin-top: 24px;">
       <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 10px; border-bottom: 1px solid var(--stone-border); padding-bottom: 16px; margin-bottom: 16px;">
         <span style="font-family: var(--font-roman); font-size: 0.9rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--stone-espresso); font-weight: 600;">Estimated Material Cost</span>
-        <span id="calcTotalDisplay" style="font-family: var(--font-roman); font-size: 1.85rem; color: var(--stone-gold); font-weight: 700;">Rs 72,900</span>
+        <span id="calcTotalDisplay" style="font-family: var(--font-roman); font-size: 1.85rem; color: var(--stone-gold); font-weight: 700;">Enter Rate Above</span>
       </div>
 
       <div style="font-size: 0.9rem; color: var(--stone-text-body); line-height: 1.7;">
@@ -195,8 +213,8 @@
           <strong id="calcBufferArea">12 sq.ft. (Total: 162 sq.ft.)</strong>
         </div>
         <div style="display: flex; justify-content: space-between;">
-          <span>Benchmark Unit Rate:</span>
-          <strong id="calcUnitRate">Rs 450 / sq.ft.</strong>
+          <span>Entered Rate:</span>
+          <strong id="calcUnitRate">Awaiting rate input</strong>
         </div>
       </div>
 
@@ -219,7 +237,7 @@
       <div class="atelier-footer-col">
         <span class="atelier-footer-brand">Aashiyana Decor</span>
         <p class="atelier-footer-tagline">
-          Jaipur premier stone atelier and direct supplier of imported Italian marble, Rajasthan gangsaw granite, authorized Specta Quartz, and designer vitrified tiles since 2005.
+          Jaipur's premier stone atelier and direct supplier of imported Italian marble, Rajasthan gangsaw granite, authorized Specta Quartz, and designer vitrified tiles since 2005.
         </p>
       </div>
       <div class="atelier-footer-col">
@@ -254,8 +272,10 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const areaInput = document.getElementById('calcArea');
+  const appSelect = document.getElementById('calcApplication');
   const materialSelect = document.getElementById('calcMaterial');
+  const rateInput = document.getElementById('calcRate');
+  const areaInput = document.getElementById('calcArea');
   const totalDisplay = document.getElementById('calcTotalDisplay');
   const netAreaDisplay = document.getElementById('calcNetArea');
   const bufferAreaDisplay = document.getElementById('calcBufferArea');
@@ -264,30 +284,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function calculate() {
     const area = parseFloat(areaInput.value) || 0;
-    const selectedOption = materialSelect.options[materialSelect.selectedIndex];
-    const rate = parseFloat(selectedOption.getAttribute('data-rate')) || 0;
-    const matName = selectedOption.getAttribute('data-name');
+    const rate = parseFloat(rateInput.value) || 0;
+    const appName = appSelect.options[appSelect.selectedIndex].text;
+    const matName = materialSelect.options[materialSelect.selectedIndex].text;
 
     const buffer = Math.round(area * 0.08);
     const totalArea = area + buffer;
-    const totalCost = Math.round(totalArea * rate);
 
-    netAreaDisplay.textContent = area + ' sq.ft.';
-    bufferAreaDisplay.textContent = buffer + ' sq.ft. (Total: ' + totalArea + ' sq.ft.)';
-    unitRateDisplay.textContent = 'Rs ' + rate + ' / sq.ft.';
-    totalDisplay.textContent = 'Rs ' + totalCost.toLocaleString('en-IN');
+    netAreaDisplay.textContent = area > 0 ? (area + ' sq.ft.') : '0 sq.ft.';
+    bufferAreaDisplay.textContent = area > 0 ? (buffer + ' sq.ft. (Total: ' + totalArea + ' sq.ft.)') : '0 sq.ft.';
 
-    const waText = encodeURIComponent(
-      'Hi Aashiyana Decor, I calculated a project estimate on your website:\n' +
-      '- Material: ' + matName + '\n' +
-      '- Area: ' + area + ' sq.ft. (Total with 8% buffer: ' + totalArea + ' sq.ft.)\n' +
-      '- Estimated Budget: Rs ' + totalCost.toLocaleString('en-IN') + '\n\n' +
-      'Please let me know ready slab availability at your Gopalpura Bypass showroom.'
-    );
-    waBtn.href = 'https://wa.me/919468634597?text=' + waText;
+    if (rate > 0) {
+      const totalCost = Math.round(totalArea * rate);
+      unitRateDisplay.textContent = 'Rs ' + rate.toLocaleString('en-IN') + ' / sq.ft.';
+      totalDisplay.textContent = 'Rs ' + totalCost.toLocaleString('en-IN');
+
+      const waText = encodeURIComponent(
+        'Hi Aashiyana Decor, I calculated a project estimate on your website:\n' +
+        '- Application: ' + appName + '\n' +
+        '- Material: ' + matName + '\n' +
+        '- Rate: Rs ' + rate.toLocaleString('en-IN') + ' / sq.ft.\n' +
+        '- Area: ' + area + ' sq.ft. (Total with 8% buffer: ' + totalArea + ' sq.ft.)\n' +
+        '- Estimated Total: Rs ' + totalCost.toLocaleString('en-IN') + '\n\n' +
+        'Please let me know ready slab availability at your Gopalpura Bypass showroom.'
+      );
+      waBtn.href = 'https://wa.me/919468634597?text=' + waText;
+      waBtn.onclick = null;
+    } else {
+      unitRateDisplay.textContent = 'Enter rate above';
+      totalDisplay.textContent = 'Enter Rate Above';
+      waBtn.href = '#';
+      waBtn.onclick = (e) => {
+        e.preventDefault();
+        rateInput.focus();
+        rateInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      };
+    }
   }
 
+  rateInput.addEventListener('input', calculate);
   areaInput.addEventListener('input', calculate);
+  appSelect.addEventListener('change', calculate);
   materialSelect.addEventListener('change', calculate);
 
   document.querySelectorAll('.calc-preset-btn').forEach(btn => {
