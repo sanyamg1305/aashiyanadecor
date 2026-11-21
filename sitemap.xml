@@ -533,4 +533,36 @@
     </image:image>
   </url>
 
+  <!-- HTML Architectural Site Directory -->
+  <url>
+    <loc>https://www.aashiyanadecor.in/sitemap</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Commercial Money Page: Makrana Marble Jaipur -->
+  <url>
+    <loc>https://www.aashiyanadecor.in/makrana-marble-jaipur</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
+      <image:title>Makrana Marble Jaipur - Aashiyana Decor</image:title>
+    </image:image>
+  </url>
+
+  <!-- Commercial Money Page: Staircase Granite Jaipur -->
+  <url>
+    <loc>https://www.aashiyanadecor.in/stairs-granite-jaipur</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
+      <image:title>Staircase Granite Steps Jaipur - Aashiyana Decor</image:title>
+    </image:image>
+  </url>
+
 </urlset>
