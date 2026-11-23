@@ -434,3 +434,12 @@ function showToast(message) {
     }, 4000);
   }
 }
+
+/* --- Vercel Web Analytics Fallback Initializer --- */
+window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+if (!document.querySelector('script[src*="/_vercel/insights/script.js"]')) {
+  const vaScript = document.createElement('script');
+  vaScript.defer = true;
+  vaScript.src = '/_vercel/insights/script.js';
+  document.head.appendChild(vaScript);
+}
