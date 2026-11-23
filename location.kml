@@ -1,14 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>Aashiyana Decor - Jaipur Stone Atelier &amp; Showroom</name>
+    <name>Aashiyana Decor - Jaipur Stone Atelier, Stockyard &amp; Delivery Network</name>
     <description>Authorized Specta Quartz, Imported Italian Marble, Gangsaw Granite, and Designer Vitrified Tiles in Jaipur, Rajasthan.</description>
+
+    <!-- ═══ SHOWROOM & STOCKYARD HEADQUARTERS ═══ -->
     <Placemark>
-      <name>Aashiyana Decor Showroom &amp; Stockyard</name>
-      <description>Plot No. 8, Opp. Metro Pillar No. 30, Gopalpura Bypass, Mansarovar, Jaipur, Rajasthan 302020. Phone: +91 94686 34597</description>
+      <name>Aashiyana Decor - Showroom &amp; Stockyard</name>
+      <description>Plot No. 8, Opp. Metro Pillar No. 30, Gopalpura Bypass, Mansarovar, Jaipur, Rajasthan 302020. Phone: +91 94686 34597. Authorized Specta Quartz dealer, imported Italian marble, and gangsaw granite stockyard.</description>
       <Point>
         <coordinates>75.7520,26.8680,0</coordinates>
       </Point>
     </Placemark>
+
+    <!-- ═══ GREATER JAIPUR SERVICE DELIVERY BOUNDARY (POLYGON) ═══ -->
+    <Placemark>
+      <name>Aashiyana Decor - Greater Jaipur Primary Delivery Zone</name>
+      <description>Full crane delivery, padded slab transport, and on-site dry-lay inspection polygon covering Mansarovar, Vaishali Nagar, C-Scheme, Civil Lines, Malviya Nagar, Jagatpura, and Ajmer Road corridor.</description>
+      <Polygon>
+        <extrude>1</extrude>
+        <altitudeMode>clampToGround</altitudeMode>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              75.7200,26.9200,0
+              75.8050,26.9180,0
+              75.8300,26.8900,0
+              75.8250,26.8450,0
+              75.8550,26.8100,0
+              75.7850,26.8000,0
+              75.7400,26.8400,0
+              75.7150,26.8750,0
+              75.7200,26.9200,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <!-- ═══ NEIGHBORHOOD DELIVERY HUBS ═══ -->
+    <Placemark>
+      <name>Aashiyana Decor - Mansarovar &amp; Gopalpura Hub</name>
+      <description>Direct showroom stockyard, dry-lay preview floor, and trade counter at Gopalpura Bypass Opp. Metro Pillar 30.</description>
+      <Point>
+        <coordinates>75.7520,26.8680,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Aashiyana Decor - Vaishali Nagar &amp; Gandhi Path Hub</name>
+      <description>Dedicated sample dispatch and slab transport for luxury villas in Vaishali Nagar, Chitrakoot, and Gandhi Path.</description>
+      <Point>
+        <coordinates>75.7430,26.9030,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Aashiyana Decor - C-Scheme &amp; Civil Lines Hub</name>
+      <description>Architectural sample kit and crane delivery service for heritage estates and luxury penthouses in C-Scheme and Civil Lines.</description>
+      <Point>
+        <coordinates>75.8010,26.9080,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Aashiyana Decor - Malviya Nagar &amp; JLN Marg Hub</name>
+      <description>Prompt 12-minute bypass delivery and dry-lay coordination for residences across Malviya Nagar, Jawahar Circle, and Siddharth Nagar.</description>
+      <Point>
+        <coordinates>75.8150,26.8550,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Aashiyana Decor - Jagatpura &amp; Mahal Road Hub</name>
+      <description>Boom crane transport and large-format porcelain slab delivery for multi-story towers and villas along Mahal Road and NRI Colony.</description>
+      <Point>
+        <coordinates>75.8450,26.8180,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Aashiyana Decor - Ajmer Road Corridor Hub</name>
+      <description>Bulk wholesale gangsaw granite and exterior stone delivery for farmhouses, townships, and resorts along Ajmer Road.</description>
+      <Point>
+        <coordinates>75.7180,26.8850,0</coordinates>
+      </Point>
+    </Placemark>
+
   </Document>
 </kml>
