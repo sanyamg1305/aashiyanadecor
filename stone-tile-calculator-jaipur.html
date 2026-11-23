@@ -106,6 +106,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="css/style.css?v=3.0"/>
+  <style>
+    @media print {
+      body {
+        background: #fff !important;
+        color: #111 !important;
+      }
+      .atelier-topbar, .atelier-header, .mobile-nav, .mobile-bottom-bar, .atelier-footer, .atelier-hero,
+      #calcActionsRow, .calc-preset-btn, #calcQuickSizes, label[for="calcArea"] span {
+        display: none !important;
+      }
+      .atelier-section {
+        padding: 0 !important;
+      }
+      .calculator-print-container {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+      }
+      .print-only-block {
+        display: block !important;
+      }
+    }
+    @media screen {
+      .print-only-block {
+        display: none;
+      }
+    }
+  </style>
 </head>
 <body style="background-color: var(--stone-bg, #FAF8F5); color: var(--stone-text-body, #2C2825);">
 
@@ -156,7 +185,21 @@
 
 <!-- CALCULATOR INTERFACE -->
 <section class="atelier-section" style="padding: 40px 20px;">
-  <div style="max-width: 840px; margin: 0 auto; background: #fff; border: 1px solid var(--stone-border); border-radius: 4px; padding: 36px 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+  <div class="calculator-print-container" style="max-width: 840px; margin: 0 auto; background: #fff; border: 1px solid var(--stone-border); border-radius: 4px; padding: 36px 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+    
+    <!-- PRINT ONLY FORMAL QUOTATION HEADER -->
+    <div class="print-only-block" style="border-bottom: 2px solid #2C2825; padding-bottom: 14px; margin-bottom: 24px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div>
+          <h2 style="font-family: var(--font-roman, 'Cinzel', serif); font-size: 1.6rem; color: #2C2825; margin: 0; text-transform: uppercase;">Aashiyana Decor</h2>
+          <p style="font-size: 0.85rem; color: #666; margin: 4px 0 0;">Jaipur Stone Atelier &middot; Estd. 2005</p>
+        </div>
+        <div style="text-align: right; font-size: 0.85rem; color: #444;">
+          <strong>Official Project Budget Estimate</strong><br/>
+          <span>Date: <span id="printDate"></span></span>
+        </div>
+      </div>
+    </div>
     
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-bottom: 30px;">
       
@@ -249,14 +292,26 @@
         </div>
       </div>
 
-      <div style="margin-top: 24px; text-align: center;">
-        <a id="calcWaBtn" href="#" target="_blank" class="atelier-btn-espresso" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 14px 20px; font-size: 0.92rem; text-decoration: none;">
-          <i class="fab fa-whatsapp"></i> WhatsApp This Estimate to Stone Specialist &rarr;
+      <!-- PRINT & WHATSAPP ACTION BUTTONS -->
+      <div id="calcActionsRow" style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+        <a id="calcWaBtn" href="#" target="_blank" class="atelier-btn-espresso" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; flex: 1; min-width: 250px; padding: 14px 20px; font-size: 0.92rem; text-decoration: none;">
+          <i class="fab fa-whatsapp"></i> WhatsApp This Estimate &rarr;
         </a>
-        <p style="font-size: 0.78rem; color: var(--stone-text-muted); margin-top: 10px;">
-          Includes local dry-lay inspection support at Gopalpura Bypass. Actual transport calculated at dispatch.
-        </p>
+        <button type="button" onclick="window.print()" class="atelier-btn-outline" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 22px; font-size: 0.92rem; cursor: pointer; background: #fff;">
+          <i class="fas fa-print"></i> Print / Save PDF
+        </button>
       </div>
+
+      <!-- PRINT ONLY FOOTER -->
+      <div class="print-only-block" style="border-top: 1px solid #ccc; padding-top: 14px; margin-top: 24px; font-size: 0.82rem; color: #555; line-height: 1.5;">
+        <p style="margin: 0 0 4px;"><strong>Showroom &amp; Stockyard:</strong> Plot No. 8, Opp. Metro Pillar No. 30, Gopalpura Bypass, Mansarovar, Jaipur, Rajasthan 302020</p>
+        <p style="margin: 0 0 4px;"><strong>Direct Desk:</strong> +91 94686 34597 &nbsp;|&nbsp; <strong>Website:</strong> www.aashiyanadecor.in &nbsp;|&nbsp; <strong>GSTIN:</strong> 08ADGPG4545H1ZL</p>
+        <p style="margin: 0; font-size: 0.75rem; color: #777;">* Estimate is indicative based on user-entered parameters. Final rates subject to lot inspection, slab measurements, and prevailing GST.</p>
+      </div>
+
+      <p style="font-size: 0.78rem; color: var(--stone-text-muted); margin-top: 10px; text-align: center;">
+        Includes local dry-lay inspection support at Gopalpura Bypass. Actual transport calculated at dispatch.
+      </p>
     </div>
   </div>
 </section>
@@ -364,6 +419,11 @@ document.addEventListener('DOMContentLoaded', () => {
       calculate();
     });
   });
+
+  const printDateEl = document.getElementById('printDate');
+  if (printDateEl) {
+    printDateEl.textContent = new Date().toLocaleDateString('en-IN', { year: 'numeric', month: 'short', day: 'numeric' });
+  }
 
   calculate();
 });

@@ -443,3 +443,12 @@ if (!document.querySelector('script[src*="/_vercel/insights/script.js"]')) {
   vaScript.src = '/_vercel/insights/script.js';
   document.head.appendChild(vaScript);
 }
+
+/* --- Service Worker Registration (PWA & Offline Performance) --- */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {
+      /* Silently ignore registration failure */
+    });
+  });
+}

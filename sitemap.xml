@@ -625,4 +625,28 @@
     </image:image>
   </url>
 
+  <!-- Architectural Guide: Granite & Quartz Edge Profiles Jaipur -->
+  <url>
+    <loc>https://www.aashiyanadecor.in/granite-edge-profiles-jaipur</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
+      <image:title>Granite and Quartz Edge Profiles Jaipur - Aashiyana Decor</image:title>
+    </image:image>
+  </url>
+
+  <!-- Technical Maintenance Guide: Stone Care & Stain Removal Guide Jaipur -->
+  <url>
+    <loc>https://www.aashiyanadecor.in/stone-care-stain-removal-guide-jaipur</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.aashiyanadecor.in/images/marble/Statuario.webp</image:loc>
+      <image:title>Natural Stone and Quartz Care Stain Removal Guide Jaipur - Aashiyana Decor</image:title>
+    </image:image>
+  </url>
+
 </urlset>
