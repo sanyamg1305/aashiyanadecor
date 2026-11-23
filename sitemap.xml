@@ -589,4 +589,16 @@
     </image:image>
   </url>
 
+  <!-- Commercial Money Page: Vitrified Tiles Price Jaipur -->
+  <url>
+    <loc>https://www.aashiyanadecor.in/vitrified-tiles-price-jaipur</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.aashiyanadecor.in/images/tiles/syncstone_tile_03.webp</image:loc>
+      <image:title>Vitrified Tiles Price Jaipur - Aashiyana Decor</image:title>
+    </image:image>
+  </url>
+
 </urlset>
