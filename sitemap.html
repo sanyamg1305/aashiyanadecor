@@ -106,9 +106,16 @@
   </div>
 </section>
 
-<!-- DIRECTORY GRID -->
+<!-- DIRECTORY GRID & LIVE SEARCH -->
 <section class="atelier-section" style="padding: 40px 20px;">
   <div style="max-width: 1100px; margin: 0 auto;">
+    
+    <!-- REAL-TIME DIRECTORY SEARCH -->
+    <div style="margin-bottom: 36px; max-width: 580px; margin-left: auto; margin-right: auto; position: relative;">
+      <i class="fas fa-search" style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--stone-gold, #9A7B38); font-size: 0.95rem;"></i>
+      <input type="text" id="sitemapFilter" placeholder="Filter pages (e.g. quartz, granite, elevation, C-Scheme)..." style="width: 100%; padding: 14px 16px 14px 44px; border: 1px solid var(--stone-border); border-radius: 4px; font-family: var(--font-sans, inherit); font-size: 0.95rem; background: #fff; color: var(--stone-espresso); outline: none; box-shadow: 0 2px 8px rgba(0,0,0,0.03);"/>
+      <div id="filterResultCount" style="text-align: right; font-size: 0.8rem; color: var(--stone-text-muted); margin-top: 6px; display: none;"></div>
+    </div>
     
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
       
@@ -144,6 +151,7 @@
           <li><a href="/kota-stone-price-jaipur" style="color: var(--stone-text-body); text-decoration: none;">Natural Kota Stone (Blue &amp; Brown)</a></li>
           <li><a href="/wooden-tiles-flooring-jaipur" style="color: var(--stone-text-body); text-decoration: none;">Wooden Finish Vitrified Planks</a></li>
           <li><a href="/bathroom-tiles-jaipur" style="color: var(--stone-text-body); text-decoration: none;">Bathroom Floor &amp; Wall Tiles</a></li>
+          <li><a href="/elevation-stone-cladding-jaipur" style="color: var(--stone-text-body); text-decoration: none;">Exterior Elevation Stone &amp; Cladding</a></li>
         </ul>
       </div>
 
@@ -156,6 +164,7 @@
           <li><a href="/stone-tile-calculator-jaipur" style="color: var(--stone-espresso); text-decoration: none; font-weight: 600;">Interactive Stone Cost Calculator</a></li>
           <li><a href="/stone-comparison-jaipur" style="color: var(--stone-espresso); text-decoration: none; font-weight: 600;">Surface Comparison Engine</a></li>
           <li><a href="/vitrified-tiles-price-jaipur" style="color: var(--stone-espresso); text-decoration: none; font-weight: 600;">Vitrified Tiles Price Jaipur Benchmark</a></li>
+          <li><a href="/italian-marble-vs-indian-marble-jaipur" style="color: var(--stone-text-body); text-decoration: none;">Italian vs Indian Marble Guide</a></li>
           <li><a href="/kitchen-countertop-jaipur" style="color: var(--stone-text-body); text-decoration: none;">Kitchen Countertop Guide &amp; Rates</a></li>
           <li><a href="/italian-marble-price-jaipur" style="color: var(--stone-text-body); text-decoration: none;">Italian Marble Price Jaipur Benchmark</a></li>
           <li><a href="/granite-price-jaipur" style="color: var(--stone-text-body); text-decoration: none;">Granite Price Jaipur Benchmark</a></li>
@@ -264,6 +273,39 @@
     <i class="fas fa-map-marker-alt"></i> Showroom
   </a>
 </div>
+
+<!-- Real-time Directory Live Filter Script -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const filterInput = document.getElementById('sitemapFilter');
+  const countDisplay = document.getElementById('filterResultCount');
+  const allListItems = document.querySelectorAll('.atelier-section ul li');
+
+  if (filterInput) {
+    filterInput.addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase().trim();
+      let visible = 0;
+
+      allListItems.forEach(li => {
+        const txt = li.textContent.toLowerCase();
+        if (!q || txt.includes(q)) {
+          li.style.display = '';
+          visible++;
+        } else {
+          li.style.display = 'none';
+        }
+      });
+
+      if (q) {
+        countDisplay.style.display = 'block';
+        countDisplay.textContent = 'Found ' + visible + ' destinations';
+      } else {
+        countDisplay.style.display = 'none';
+      }
+    });
+  }
+});
+</script>
 
 <!-- Vercel Web Analytics -->
 <script>

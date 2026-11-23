@@ -601,4 +601,28 @@
     </image:image>
   </url>
 
+  <!-- Commercial Money Page: Exterior Elevation Stone Cladding Jaipur -->
+  <url>
+    <loc>https://www.aashiyanadecor.in/elevation-stone-cladding-jaipur</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/GalaxyBlack.webp</image:loc>
+      <image:title>Exterior Elevation Stone Cladding Jaipur - Aashiyana Decor</image:title>
+    </image:image>
+  </url>
+
+  <!-- Commercial Money Page: Italian Marble vs Indian Marble Jaipur -->
+  <url>
+    <loc>https://www.aashiyanadecor.in/italian-marble-vs-indian-marble-jaipur</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.aashiyanadecor.in/images/granite/AmbajiWhite.webp</image:loc>
+      <image:title>Italian Marble vs Indian Marble Jaipur - Aashiyana Decor</image:title>
+    </image:image>
+  </url>
+
 </urlset>
