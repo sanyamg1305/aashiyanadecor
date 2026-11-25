@@ -21,6 +21,16 @@
       "source": "/blog/is-it-cheaper-to-buy-marble-in-kishangarh-or-jaipur.html",
       "destination": "/kishangarh-marble-vs-jaipur",
       "permanent": true
+    },
+    {
+      "source": "/blog/index",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/index.html",
+      "destination": "/blog",
+      "permanent": true
     }
   ],
   "headers": [
