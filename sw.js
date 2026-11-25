@@ -3,7 +3,7 @@
    PWA offline caching for core pages and assets
    ========================================================================== */
 
-const CACHE_NAME = 'aashiyana-cache-v1';
+const CACHE_NAME = 'aashiyana-cache-v2';
 const CORE_PRECACHE = [
   '/',
   '/css/style.css',
